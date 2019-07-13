@@ -201,9 +201,9 @@
                                             <div class="col-md-12">
                                               <div class="form-group">
                                                    <label class="control-label">Which Day is Today?</label><br>
-                                                     <input type="checkbox" name="dattend1" value="yes"> Friday 27th September 2019<br>
-                                                     <input type="checkbox" name="dattend2" value="yes"> Saturday 28th September 2019<br>
-                                                     <input type="checkbox" name="dattend3" value="yes"> Sunday 29th September 2019
+                                                     <input type="checkbox" name="dattend1" value="yes"> <b>Friday</b>27th September 2019<br>
+                                                     <input type="checkbox" name="dattend2" value="yes"> <b>Saturday</b>28th September 2019<br>
+                                                     <input type="checkbox" name="dattend3" value="yes"> <b>Sunday</b>29th September 2019
                                               </div>
                                                 <div class="form-group">
                                                     <label class="control-label">How did you hear about the program?</label>
