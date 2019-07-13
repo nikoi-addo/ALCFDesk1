@@ -50,42 +50,44 @@
                     <fieldset>
                         <h2 class="fs-title">Please Enter Code for Verification</h2>
                         <h3 class="fs-subtitle">For Today's Date : </h3>
-                        <input type="text" name="code" placeholder="ALC code..." />
-
-                        <input type="button" name="verify" class="next action-button" value="Verify" />
+                        <div id="vempty" class=""></div>
+                        <input type="text" name="code" placeholder="ALC code..." id="vcode"/>
+                        <input type="button" onmouseover="disableverifybutton()" onclick="uattendance()" name="verify" class="next action-button" value="Verify" id="vsubmit"/>
                     </fieldset>
                     <fieldset>
                         <h2 class="fs-title">Details</h2>
-                        <h3 class="fs-subtitle">Information from Database for ALC CODE</h3>
+                        <h3 class="fs-subtitle"></h3>
+                        <div id="vempty1" class=""></div>
                         <!-- <input type="text" name="name" placeholder="Name" /> -->
-                        <div>John Smith</div>
+                        <div id="name"></div>
                         <!-- <input type="text" name="Email" placeholder="Email" /> -->
-                        <div>jaysmith@smithsonian.com</div>
+                        <div id="email"></div>
                         <!-- <input type="text" name="phone" placeholder="Phone" /> -->
-                        <div>+233 263192377</div>
+                        <div id="tel"></div>
                         <!-- <input name="address" placeholder="Address"></input> -->
-                        <div>P.O. Box 55, Accra</div>
+                        <div id="location"></div>
                         <!-- <input type="text" name="dob" placeholder="Date of Birth" /> -->
-                        <div>9th June, 2020</div>
-                        <div class="custom-control custom-checkbox mr-sm-2 mb-3">
+                        <div id="dob"></div>
+                        <div class="custom-control custom-checkbox mr-sm-2 mb-3" id="checkbox">
                         <input type="checkbox" class="custom-control-input custom-checkbox mr-sm-2 mb-3" id="checkbox0" value="check">
                         <label class="custom-control-label" for="checkbox0">Check : This person is Present !</label>
                         </div>
 
-                        <input type="button" name="previous" class="previous action-button" value="Previous" />
-                        <input type="button" name="submit" class="next action-button" value="Submit" />
+                        <input type="button" name="previous" class="previous action-button" value="Previous" id="vprevious"/>
+                        <input type="button" name="submit" class="next action-button" value="Submit" id="vsubmit1"/>
                     </fieldset>
                     <fieldset>
                         <h2 class="fs-title">Check Successful</h2>
                         <h3 class="fs-subtitle">Click Button to Start Again</h3>
 
-                        <input type="submit" name="submit" class="submit action-button" value="Verify New" />
+                        <input type="submit" name="submit" class="submit action-button" value="Verify New"/>
                     </fieldset>
                 </form>
                 <div class="clear"></div>
             </div>
         </div>
     </section>
+    <script src="dist/js/user.js"></script>
     <!-- ============================================================== -->
     <!-- End Wrapper -->
     <!-- ============================================================== -->

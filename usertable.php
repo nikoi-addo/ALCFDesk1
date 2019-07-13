@@ -1,8 +1,8 @@
+<?php
+  include 'ops/dbcon.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
-
-
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Tell the browser to be responsive to screen width -->
@@ -107,25 +107,28 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
 
-                        <li class="nav-small-cap">--- PERSONAL</li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
-                                aria-expanded="false"><i class="icon-note"></i><span class="hide-menu">Form
-                                    <span class="badge badge-pill badge-cyan ml-auto">4</span></span></a>
-
-                        </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
-                                aria-expanded="false"><i class="icon-people"></i><span
-                                    class="hide-menu">User Tables</span></a>
-
-                        </li>
+                      <li class="nav-small-cap">--- PERSONAL</li>
+                      <li> <a class="has-arrow waves-effect waves-dark" href="index.html"
+                              aria-expanded="false"><i class="icon-note" ></i><span class="hide-menu">Registartion Form
+                                  <span class="badge badge-pill badge-cyan ml-auto">4</span></span></a>
 
 
+                      </li>
+                      <li> <a class="has-arrow waves-effect waves-dark" href="index-2.html"
+                              aria-expanded="false"><i class="icon-people"></i><span
+                                  class="hide-menu">User Tables <b>D-Day Table</b></span></a>
 
+                      </li>
+                       <li> <a class="has-arrow waves-effect waves-dark" href="index-2.html"
+                              aria-expanded="false"><i class="ti-server"></i><span
+                                  class="hide-menu">User Tables <b>Before D-Day Table</b></span></a>
 
+                      </li>
+                       <li> <a class="has-arrow waves-effect waves-dark" href="index-2.html"
+                              aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span
+                                  class="hide-menu">User Tables <b>All Users</b></span></a>
 
-
-
-
+                      </li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -170,6 +173,7 @@
                                         cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
+                                                <th>No.</th>
                                                 <th>Code</th>
                                                 <th>First Name</th>
                                                 <th>Last Name</th>
@@ -177,21 +181,68 @@
                                                 <th>Phone Number</th>
                                                 <th>Date of Birth</th>
                                                 <th>Location</th>
+                                                <th>Info about program?</th>
+                                                <th>Expectations</th>
+                                                <th>Friday</th>
+                                                <th>Saturday</th>
+                                                <th>Sunday</th>
+                                                <th>Registrar</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                          <tr>
-                                            <td>Something Nicely done</td>
-                                            <td>done</td>
-                                            <td>Somet</td>
-                                            <td>Nice</td>
-                                            <td>thing done</td>
-                                            <td>Nicely done</td>
-                                            <td>Somethingdone</td>
-                                          </tr>
+                                          <?php
+                                            //Displaying details of registration from database
+                                            $sql_eventreglist = "SELECT * FROM eventregistration";
+                                            $success_eventreglist = mysqli_query($link, $sql_eventreglist);
+                                            if ($success_eventreglist->num_rows > 0) {
+                                              $i = 1;
+                                              while ($row = $success_eventreglist->fetch_assoc()) {
+                                          ?>
+                                                <tr>
+                                                  <td><?php echo $i; ?></td>
+                                                  <td><?php echo $row['usercode']; ?></td>
+                                                  <td><?php echo $row['fname']; ?></td>
+                                                  <td><?php echo $row['lname']; ?></td>
+                                                  <td><?php echo $row['email']; ?></td>
+                                                  <td><?php echo $row['phone']; ?></td>
+                                                  <?php if ($row['dob'] =="") { $dob = "N/A"; } elseif(!empty($row['dob'])){ $dob = $row['dob']; } ?>
+                                                  <td><?php echo $dob; ?></td>
+                                                  <td><?php echo $row['location']; ?></td>
+                                                  <!-- Assign options to the source -->
+                                                  <?php
+                                                    if ($row['source'] == "cat0") {
+                                                      $sources = "N/A";
+                                                    }
+                                                    if ($row['source'] == "cat1") {
+                                                      $sources = "A member of the church";
+                                                    }
+                                                    if ($row['source'] == "cat2") {
+                                                      $sources = "Social Media";
+                                                    }
+                                                    if ($row['source'] == "cat3") {
+                                                      $sources = "Flyer";
+                                                    }
+                                                    if ($row['source'] == "cat4") {
+                                                      $sources = "Family Friend";
+                                                    }
+                                                  ?>
+                                                  <td><?php echo $sources; ?></td>
+                                                  <?php if ($row['expectations'] == "") { $expectations = "N/A";} elseif(!empty($row['expectations'])) {$expectations = $row['expectations'];} ?>
+                                                  <td><?php echo $expectations; ?></td>
+                                                  <td><?php echo $row['dattend1']; ?></td>
+                                                  <td><?php echo $row['dattend2']; ?></td>
+                                                  <td><?php echo $row['dattend3']; ?></td>
+                                                  <td><?php echo $row['registrar']; ?></td>
+                                                </tr>
+                                          <?php
+                                                $i++;
+                                              }
+                                            }
+                                          ?>
                                         </tbody>
-                                        <tfoot>
+                                        <!-- <tfoot>
                                             <tr>
+                                                <th>No.</th>
                                                 <th>Code</th>
                                                 <th>First Name</th>
                                                 <th>Last Name</th>
@@ -203,7 +254,7 @@
                                         </tfoot>
                                         <tbody>
 
-                                        </tbody>
+                                        </tbody> -->
                                     </table>
                                 </div>
                             </div>

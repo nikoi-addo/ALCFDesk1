@@ -93,18 +93,26 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
 
-                        <li class="nav-small-cap">--- PERSONAL</li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
-                                aria-expanded="false"><i class="icon-note"></i><span class="hide-menu">Form
-                                    <span class="badge badge-pill badge-cyan ml-auto">4</span></span></a>
+                      <li class="nav-small-cap">--- PERSONAL</li>
+                      <li> <a class="has-arrow waves-effect waves-dark" href="index.html"
+                              aria-expanded="false"><i class="icon-note" ></i><span class="hide-menu">Registration Form
+                                  <span class="badge badge-pill badge-cyan ml-auto">4</span></span></a>
+                      </li>
+                      <li> <a class="has-arrow waves-effect waves-dark" href="index-2.html"
+                              aria-expanded="false"><i class="icon-people"></i><span
+                                  class="hide-menu">User Tables <b>D-Day Table</b></span></a>
 
-                        </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
-                                aria-expanded="false"><i class="icon-people"></i><span
-                                    class="hide-menu">User Tables</span></a>
+                      </li>
+                       <li> <a class="has-arrow waves-effect waves-dark" href="index-2.html"
+                              aria-expanded="false"><i class="ti-server"></i><span
+                                  class="hide-menu">User Tables <b>Before D-Day Table</b></span></a>
 
-                        </li>
+                      </li>
+                       <li> <a class="has-arrow waves-effect waves-dark" href="index-2.html"
+                              aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span
+                                  class="hide-menu">User Tables <b>All Users</b></span></a>
 
+                      </li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -126,13 +134,18 @@
                     <div class="col-md-5 align-self-center">
                         <h4 class="text-themecolor">The Temple Of Charis Registration Form</h4>
                     </div>
-                    <div class="col-md-7 align-self-center text-right">
-                        <div class="d-flex justify-content-end align-items-center">
-
-                            <button type="button" class="btn btn-info d-none d-lg-block m-l-15"><i class="fa fa-plus-circle"></i> Create New</button>
-                        </div>
-                    </div>
                 </div>
+                <?php
+                  if (isset($_GET['rsp']) && $_GET['rsp'] == 0) {?>
+                    <div class="alert alert-success" id="rspalert">Registration details inserted successfully!<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></div>
+                <?php  }
+                  elseif (isset($_GET['rsp']) && $_GET['rsp'] == 1) {?>
+                    <div class="alert alert-danger" id="rspalert">Unable to insert registration details. Try again!<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></div>
+                <?php }
+                ?>
+
+
+
                 <!-- ============================================================== -->
                 <!-- End Bread crumb and right sidebar toggle -->
                 <!-- ============================================================== -->
@@ -192,10 +205,16 @@
                                     <section>
                                         <div class="row">
                                             <div class="col-md-12">
+                                              <div class="form-group">
+                                                   <label class="control-label">Which Day is Today?</label><br>
+                                                     <input type="checkbox" name="dattend1" value="yes"> Friday 27th September 2019<br>
+                                                     <input type="checkbox" name="dattend2" value="yes"> Saturday 28th September 2019<br>
+                                                     <input type="checkbox" name="dattend3" value="yes"> Sunday 29th September 2019
+                                              </div>
                                                 <div class="form-group">
                                                     <label class="control-label">How did you hear about the program?</label>
                                                     <select class="form-control custom-select" data-placeholder="How did you hear about the program?" tabindex="1" name="source">
-                                                    	<option value="cat1">Select Options</option>
+                                                    	<option value="cat0">Select Options</option>
                                                         <option value="cat1">A member of the church</option>
                                                         <option value="cat2">Social Media</option>
                                                         <option value="cat3">Flyer</option>
@@ -206,7 +225,7 @@
 
                                             <br><div class="col-md-12">
                                                 <div class="form-group">
-                                                    <label for="shortDescription3">What are your expectations for the program :</label>
+                                                    <label for="shortDescription">What are your expectations for the program :</label>
                                                     <textarea name="shortdescription" id="shortDescription3" rows="6" class="form-control"></textarea>
                                                 </div>
                                             </div>
@@ -258,6 +277,14 @@
         <!-- End footer -->
         <!-- ============================================================== -->
     </div>
+    <!-- JavaScript code to close the alert after 10 seconds -->
+    <script>
+      setTimeout(closealert, 10000);
+
+      function closealert(){
+        $("#rspalert").alert("close");
+      }
+    </script>
     <!-- ============================================================== -->
     <!-- End Wrapper -->
     <!-- ============================================================== -->
