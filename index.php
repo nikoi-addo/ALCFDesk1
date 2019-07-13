@@ -93,26 +93,20 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
 
-                      <li class="nav-small-cap">--- PERSONAL</li>
+                      
                       <li> <a class="has-arrow waves-effect waves-dark" href="index.html"
-                              aria-expanded="false"><i class="icon-note" ></i><span class="hide-menu">Registration Form
-                                  <span class="badge badge-pill badge-cyan ml-auto">4</span></span></a>
+                              aria-expanded="false"><i class="icon-note" ></i><span class="hide-menu">Menu
+                                 </span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="index.php">Registration Form</a></li>
+                                <li><a href="javascript:void(0)">Friday Table</a></li>
+                                <li><a href="javascript:void(0)">Saturday Table</a></li>
+                                <li><a href="javascript:void(0)">Sunday Table</a></li>
+                                <li><a href="usertable.php">User Tables <b>All Users</a></li>
+                                
+                            </ul>
                       </li>
-                      <li> <a class="has-arrow waves-effect waves-dark" href="index-2.html"
-                              aria-expanded="false"><i class="icon-people"></i><span
-                                  class="hide-menu">User Tables <b>D-Day Table</b></span></a>
-
-                      </li>
-                       <li> <a class="has-arrow waves-effect waves-dark" href="index-2.html"
-                              aria-expanded="false"><i class="ti-server"></i><span
-                                  class="hide-menu">User Tables <b>Before D-Day Table</b></span></a>
-
-                      </li>
-                       <li> <a class="has-arrow waves-effect waves-dark" href="index-2.html"
-                              aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span
-                                  class="hide-menu">User Tables <b>All Users</b></span></a>
-
-                      </li>
+                    
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -237,7 +231,8 @@
                                         <div class="row">
                                            <br><div class="col-md-12">
                                                 <div class="form-group ">
-                                                  <?php $usercode = uniqid('ALC'); ?>
+                                                  <?php $usercode = range(1, 1000); ?>
+
                                                   <label>Kindly copy this code for later referral</label><br>
                                                   User Code:<b><h1><?php echo $usercode; ?></h1></b>
                                                   <input type="hidden" name="usercode" value="<?php echo $usercode; ?>">

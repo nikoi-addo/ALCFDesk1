@@ -107,27 +107,18 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
 
-                      <li class="nav-small-cap">--- PERSONAL</li>
-                      <li> <a class="has-arrow waves-effect waves-dark" href="index.html"
-                              aria-expanded="false"><i class="icon-note" ></i><span class="hide-menu">Registartion Form
-                                  <span class="badge badge-pill badge-cyan ml-auto">4</span></span></a>
-
-
-                      </li>
-                      <li> <a class="has-arrow waves-effect waves-dark" href="index-2.html"
-                              aria-expanded="false"><i class="icon-people"></i><span
-                                  class="hide-menu">User Tables <b>D-Day Table</b></span></a>
-
-                      </li>
-                       <li> <a class="has-arrow waves-effect waves-dark" href="index-2.html"
-                              aria-expanded="false"><i class="ti-server"></i><span
-                                  class="hide-menu">User Tables <b>Before D-Day Table</b></span></a>
-
-                      </li>
-                       <li> <a class="has-arrow waves-effect waves-dark" href="index-2.html"
-                              aria-expanded="false"><i class="ti-layout-media-right-alt"></i><span
-                                  class="hide-menu">User Tables <b>All Users</b></span></a>
-
+                     
+                     <li> <a class="has-arrow waves-effect waves-dark" href="index.html"
+                              aria-expanded="false"><i class="icon-note" ></i><span class="hide-menu">Menu
+                                 </span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="index.php">Registration Form</a></li>
+                                <li><a href="javascript:void(0)">Friday Table</a></li>
+                                <li><a href="javascript:void(0)">Saturday Table</a></li>
+                                <li><a href="javascript:void(0)">Sunday Table</a></li>
+                                <li><a href="usertable.php">User Tables <b>All Users</a></li>
+                                
+                            </ul>
                       </li>
                     </ul>
                 </nav>
