@@ -45,8 +45,9 @@
                         <li>Response</li>
                     </ul>
                     <fieldset>
-                        <h2 class="fs-title">Details</h2>
-                        <?php
+                        <h2 class="fs-title">Personal Details</h2>
+                        <h3 class="fs-subtitle">We will never sell it</h3>
+                         <?php
                         $usercode = $_GET['uc'];
                         $sql_codeverify = "SELECT * FROM eventregistration WHERE usercode = '$usercode' ";
                         $success_codeverify = mysqli_query($link, $sql_codeverify);
@@ -54,32 +55,19 @@
                           $row = $success_codeverify->fetch_assoc();
                         ?>
                         <input type="hidden" value="<?php echo $usercode;?>" name="usercode">
-                        <div id="name"><?php echo $row['fname'] . " " .$row['lname']; ?></div>
-
-                        <div id="email"><?php echo $row['email']; ?></div>
-
-                        <div id="tel"><?php echo $row['phone']; ?></div>
-
-                        <div id="location"><?php echo $row['location']; ?></div>
-
-                        <div id="dob"><?php echo $row['dob']; ?></div><br>
-
+                        <input id="name" type="text" placeholder="<?php echo $row['fname'] . " " .$row['lname']; ?>" required disabled/>
+                        <input type="text" id="email" placeholder="<?php echo $row['email']; ?>" required disabled/>
+                        <input type="text" id="tel" placeholder="<?php echo $row['phone']; ?>" required disabled/>
+                        <input type="text" id="dob" placeholder="<?php echo $row['dob']; ?>" disabled/>
+                        <input type="text" id="location" placeholder="<?php echo $row['location']; ?>" disabled/>
+                       
                         <span>Tick below if Person is Present!<input type="checkbox" id="checkbox0" <?php if ($row['attend1'] == "yes") { echo "checked";} ?>></span>
-
 
                         <?php
                         }
                         ?>
-
-                        <div class="row">
-                          <div class="col-md-3">
-                          </div>
-                          <div class="col-md-6">
-                            <button type="submit" id="vsubmit" class="btn btn-info btn-block" style="color:white;" name="attendcheck">Verify</button>
-                          </div>
-                        </div>
-
-
+                       
+                        <button type="submit" id="vsubmit" class="btn btn-info btn-block " style="color:white;" name="attendcheck">Verify</button>
                     </fieldset>
                 </form>
                 <div class="clear"></div>
@@ -113,6 +101,8 @@
     $('#to-recover').on("click", function() {
         $("#loginform").slideUp();
         $("#recoverform").fadeIn();
+
+
     });
     </script>
 </body>

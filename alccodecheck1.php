@@ -93,6 +93,8 @@
     $('#to-recover').on("click", function() {
         $("#loginform").slideUp();
         $("#recoverform").fadeIn();
+
+
     });
     </script>
 </body>

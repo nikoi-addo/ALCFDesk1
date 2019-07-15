@@ -46,13 +46,13 @@
                     <fieldset>
                       <?php
                       $usercode = $_GET['uc'];
-                      $sql_codeverify = "SELECT fname, lname FROM eventregistration WHERE usercode = '$usercode' ";
+                      $sql_codeverify = "SELECT fname, lname, usercode FROM eventregistration WHERE usercode = '$usercode' ";
                       $success_codeverify = mysqli_query($link, $sql_codeverify);
                       if ($success_codeverify->num_rows > 0) {
                         $row = $success_codeverify->fetch_assoc();
                       ?>
                         <h2 class="fs-title">Check Successful</h2>
-                        <h3 id="fs-subtitle1" class="alert alert-success"><?php echo $row['fname']. " ". $row['lname']; ?> has been registered successfully!!!</h3>
+                        <h3 id="fs-subtitle1" class="alert alert-success"><?php echo $row['fname']. " ". $row['lname']. " ". $row['usercode']; ?>  has been verified successfully!!!</h3>
 
                       <?php } ?>
 

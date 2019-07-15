@@ -36,7 +36,7 @@
     <!-- ============================================================== -->
     <section id="wrapper" class="step-register">
         <div class="register-box">
-            <div class="">
+            <div class="input-group">
                 <a href="javascript:void(0)" class="text-center m-b-40"><img src="assets/images/logo-icon.png" alt="Home" /><br/><img src="assets/images/logo-text.png" alt="Home" /></a>
                 <!-- multistep form -->
                 <form id="msform">
