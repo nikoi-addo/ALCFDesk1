@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 13, 2019 at 02:15 AM
+-- Generation Time: Jul 15, 2019 at 04:14 AM
 -- Server version: 5.7.26-0ubuntu0.16.04.1
 -- PHP Version: 7.0.33-0ubuntu0.16.04.5
 
@@ -35,8 +35,11 @@ CREATE TABLE `eventregistration` (
   `location` varchar(32) NOT NULL,
   `dob` varchar(16) NOT NULL,
   `dattend1` varchar(3) NOT NULL,
+  `attend1` varchar(3) NOT NULL DEFAULT 'N/A',
   `dattend2` varchar(3) NOT NULL,
+  `attend2` varchar(3) NOT NULL DEFAULT 'N/A',
   `dattend3` varchar(3) NOT NULL,
+  `attend3` varchar(3) NOT NULL DEFAULT 'N/A',
   `source` varchar(4) NOT NULL,
   `expectations` text NOT NULL,
   `usercode` varchar(16) NOT NULL,
@@ -47,12 +50,12 @@ CREATE TABLE `eventregistration` (
 -- Dumping data for table `eventregistration`
 --
 
-INSERT INTO `eventregistration` (`id`, `fname`, `lname`, `email`, `phone`, `location`, `dob`, `dattend1`, `dattend2`, `dattend3`, `source`, `expectations`, `usercode`, `registrar`) VALUES
-(1, 'a', 'b', 'a@g.com', '0263192377', 'a', '2019-07-11', 'no', 'yes', 'yes', 'cat1', '', 'ALC5d289e848b865', 'Rudimentary'),
-(2, 'My', 'Name', 'is@not.necessary', '02774839203', 'But', '2019-07-29', 'yes', 'no', 'yes', 'cat1', 'Great expectations, for the power of God to be revealed.', 'ALC5d29032b479ed', 'Rudimentary'),
-(3, 'Frank', 'Olsen', 'frolansekn@mail.com', '0303193299', 'Accra', '2019-07-09', 'no', 'yes', 'no', 'cat2', 'Great ones', 'ALC5d290a4769381', 'Rudimentary'),
-(4, 'Lara', 'Vel', 'vellara@mailto.io', '124', 'Tema', '2019-07-09', 'no', 'yes', 'no', 'cat2', 'HOpe', 'ALC5d290b95a00d0', 'Rudimentary'),
-(6, 'Load', 'Balance', 'load@gmail.com', '02774839203', 'Tarkwa', '', 'no', 'no', 'yes', 'cat0', '', 'ALC5d291036b82a6', 'Rudimentary');
+INSERT INTO `eventregistration` (`id`, `fname`, `lname`, `email`, `phone`, `location`, `dob`, `dattend1`, `attend1`, `dattend2`, `attend2`, `dattend3`, `attend3`, `source`, `expectations`, `usercode`, `registrar`) VALUES
+(1, 'a', 'b', 'a@g.com', '0263192377', 'a', '2019-07-11', 'no', 'N/A', 'yes', 'N/A', 'yes', 'N/A', 'cat1', '', 'ALC5d289e848b865', 'Rudimentary'),
+(2, 'My', 'Name', 'is@not.necessary', '02774839203', 'But', '2019-07-29', 'yes', 'yes', 'no', 'N/A', 'yes', 'N/A', 'cat1', 'Great expectations, for the power of God to be revealed.', 'ALC5d29032b479ed', 'Rudimentary'),
+(3, 'Frank', 'Olsen', 'frolansekn@mail.com', '0303193299', 'Accra', '2019-07-09', 'no', 'yes', 'yes', 'N/A', 'no', 'N/A', 'cat2', 'Great ones', 'ALC5d290a4769381', 'Rudimentary'),
+(4, 'Lara', 'Vel', 'vellara@mailto.io', '124', 'Tema', '2019-07-09', 'no', 'N/A', 'yes', 'N/A', 'no', 'N/A', 'cat2', 'HOpe', 'ALC5d290b95a00d0', 'Rudimentary'),
+(6, 'Load', 'Balance', 'load@gmail.com', '02774839203', 'Tarkwa', '', 'no', 'N/A', 'no', 'N/A', 'yes', 'N/A', 'cat0', '', 'ALC5d291036b82a6', 'Rudimentary');
 
 --
 -- Indexes for dumped tables

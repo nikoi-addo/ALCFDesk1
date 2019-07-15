@@ -1,40 +1,54 @@
+var xmlhttp = new XMLHttpRequest();
+var userinput = document.getElementById('vcode').value;
+var vempty1 = document.getElementById('vempty1');
+var vempty = document.getElementById('vempty');
+var checkbox0 = document.getElementById('checkbox0');
+
+//Check if the usercode is valid
 function uattendance() {
-  var userinput = document.getElementById('vcode').value;
 
-  if (userinput.search('ALCF') == 0) {
-    document.getElementById('vempty1').innerHTML = "";
-    document.getElementById('vempty1').getAttributeNode("class").value = "";
-    document.getElementById("vsubmit1").disabled = false;
-    document.getElementById('checkbox0').disabled = false;
-    alert('success');
-
-  //
-
+  if (userinput.search('ALC') == 0) {
+    verifycode(userinput);
   }
-  else if(userinput.search('ALCF') == -1){
-    document.getElementById('vempty1').innerHTML = "Go back and enter a correct code";
-    document.getElementById('vempty1').getAttributeNode("class").value = "alert alert-danger";
+
+  else if(userinput.search('ALC') == -1){
+    vempty1.innerHTML = "Go back and enter a correct code";
+    vempty1.getAttributeNode("class").value = "alert alert-danger";
     document.getElementById("vsubmit1").disabled = true;
     document.getElementById('checkbox0').disabled = true;
   }
 }
 
-function disableverifybutton(){
-  var userinput = document.getElementById('vcode').value;
-  if (userinput =="") {
-    //Disable verify button if userinput is empty
-    document.getElementById('vsubmit').disabled = true;
-    //Display alert
-    document.getElementById('vempty').innerHTML = "Enter a code to verify";
-    document.getElementById('vempty').getAttributeNode("class").value = "alert alert-danger";
-  }
-  else {
-    //Enable verify button
-    document.getElementById("vsubmit").disabled = false;
-  }
-  setTimeout(closealert, 5000);
+function verifycode(sstring){
+  xmlhttp.onreadystatechange = function() {
+    if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+      //Show user information
+      document.getElementById('response').innerHTML = xmlhttp.responseText;
+      vempty1.innerHTML = "";
+      vempty1.getAttributeNode("class").value = "";
+      document.getElementById("vsubmit1").disabled = false;
+      checkbox0.disabled = false;
+    }
+  };
+  //Connect and submit postid and userid using POST method
+  xmlhttp.open("POST", "ops/verifycode.php", true);
+  xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xmlhttp.send("usercode="+sstring);
+}
 
-  function closealert(){
-    $("#vempty").alert("close");
-  }
+// On present display that user has been marked as been present
+function regupdate() {
+  var regupdtresponse = document.getElementById('regupdtresponse');
+
+  xmlhttp.onreadystatechange = function() {
+    if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+      document.getElementById('fs-subtitle1').innerHTML = xmlhttp.responseText;
+      regupdtresponse.innerHTML = "User recorded as been present";
+      regupdtresponse.getAttributeNode("class").value = "alert alert-success";
+    }
+  };
+  //Connect and submit postid and userid using POST method
+  xmlhttp.open("POST", "ops/regupdate.php", true);
+  xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xmlhttp.send("usercode="+userinput);
 }

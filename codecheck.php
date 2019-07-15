@@ -49,38 +49,26 @@
                     <!-- fieldsets -->
                     <fieldset>
                         <h2 class="fs-title">Please Enter Code for Verification</h2>
-                        <h3 class="fs-subtitle">For Today's Date : </h3>
+                        <h3 class="fs-subtitle">For Today's Date : <?php echo date("l"); ?></h3>
                         <div id="vempty" class=""></div>
-                        <input type="text" name="code" placeholder="ALC code..." id="vcode"/>
-                        <input type="button" onmouseover="disableverifybutton()" onclick="uattendance()" name="verify" class="next action-button" value="Verify" id="vsubmit"/>
+                        <input type="text" name="code" placeholder="ALC code..." id="vcode" required/>
+                        <input type="button" onclick="uattendance()" name="verify" class="next action-button" value="Verify" id="vsubmit"/>
                     </fieldset>
                     <fieldset>
                         <h2 class="fs-title">Details</h2>
-                        <h3 class="fs-subtitle"></h3>
                         <div id="vempty1" class=""></div>
                         <!-- <input type="text" name="name" placeholder="Name" /> -->
-                        <div id="name"></div>
-                        <!-- <input type="text" name="Email" placeholder="Email" /> -->
-                        <div id="email"></div>
-                        <!-- <input type="text" name="phone" placeholder="Phone" /> -->
-                        <div id="tel"></div>
-                        <!-- <input name="address" placeholder="Address"></input> -->
-                        <div id="location"></div>
-                        <!-- <input type="text" name="dob" placeholder="Date of Birth" /> -->
-                        <div id="dob"></div>
-                        <div class="custom-control custom-checkbox mr-sm-2 mb-3" id="checkbox">
-                        <input type="checkbox" class="custom-control-input custom-checkbox mr-sm-2 mb-3" id="checkbox0" value="check">
-                        <label class="custom-control-label" for="checkbox0">Check : This person is Present !</label>
+                        <div id="response">
+
                         </div>
 
-                        <input type="button" name="previous" class="previous action-button" value="Previous" id="vprevious"/>
+                        <input type="button" name="previous" class="previous action-button" value="Previous" id="vprevious" onclick=""/>
                         <input type="button" name="submit" class="next action-button" value="Submit" id="vsubmit1"/>
                     </fieldset>
                     <fieldset>
                         <h2 class="fs-title">Check Successful</h2>
-                        <h3 class="fs-subtitle">Click Button to Start Again</h3>
-
-                        <input type="submit" name="submit" class="submit action-button" value="Verify New"/>
+                        <h3 id="fs-subtitle1"></h3>
+                        <a href="codecheck.php"><div class="alert alert-info">Verify New<div></a>
                     </fieldset>
                 </form>
                 <div class="clear"></div>
