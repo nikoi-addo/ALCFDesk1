@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,18 +36,19 @@
     <section id="wrapper" class="login-register login-sidebar" style="background-image:url(assets/images/background/login-register.jpg);">
        <div class="login-box card">
            <br> <br> <br> <br> <br> <br> <br> <br>  <div class="card-body">
-                <form class="form-horizontal form-material text-center" id="loginform" action="ops/userlogin.php" method="post">
+                <form class="form-horizontal form-material text-center" name="registerform" action="ops/userreg.php" onsubmit="return validpass()" method="post">
                     <a href="javascript:void(0)" class="db"><img src="assets/images/logo-icon.png" alt="Home" /><br/><img src="assets/images/logo-text.png" alt="Home" /></a>
+                    <?php
+                      if (isset($_GET['ufail'])) {
+                      ?>
+                        <br><br>
+                        <div class="alert alert-danger">Username already exists!!!</div>
+                      <?php
+                      }
+                    ?>
                     <div class="form-group m-t-40">
-                        <?php
-                          if (isset($_GET['ufail'])) {
-                        ?>
-                          <div class="alert alert-danger">Username or password is incorrect!!!</div>
-                        <?php
-                          }
-                         ?>
                         <div class="col-xs-12">
-                            <input class="form-control" type="text" required="" placeholder="Username" name="username" value="<?php if (isset($_GET['ufail'])) {echo $_GET['ufail'];} ?>">
+                            <input class="form-control" type="text" required="" placeholder="Username" name="username">
                         </div>
                     </div>
                     <div class="form-group">
@@ -58,24 +56,34 @@
                             <input class="form-control" type="password" required="" placeholder="Password" name="password">
                         </div>
                     </div>
-
-                    <div class="form-group text-center m-t-20">
+                    <div class="form-group">
                         <div class="col-xs-12">
-                            <button class="btn btn-info btn-lg btn-block text-uppercase btn-rounded" type="submit">Log In</button>
+                          <div id="vpass" class="">
+                          </div>
+                            <input class="form-control" type="password" required="" placeholder="Confirm Password" name="cpassword">
                         </div>
                     </div>
-                </form>
-                <form action="register.php">
-                  <div class="form-group text-center m-t-20">
-                      <div class="col-xs-12">
-                          <button class="btn btn-info btn-lg btn-block text-uppercase btn-rounded" type="submit">Register</button>
-                      </div>
-                  </div>
+                    <div class="form-group text-center m-t-20">
+                        <div class="col-xs-12">
+                            <button class="btn btn-info btn-lg btn-block text-uppercase btn-rounded" type="submit">Register</button>
+                        </div>
+                    </div>
                 </form>
 
             </div>
         </div>
     </section>
+    <script type="text/javascript">
+      function validpass() {
+        var x = document.forms["registerform"]["password"].value;
+        var y = document.forms["registerform"]["cpassword"].value;
+        if (y !== x) {
+          document.getElementById('vpass').innerHTML = "Passwords do not match";
+          document.getElementById('vpass').getAttributeNode("class").value = "alert alert-danger";
+          return false;
+        }
+      }
+    </script>
     <!-- ============================================================== -->
     <!-- End Wrapper -->
     <!-- ============================================================== -->

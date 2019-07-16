@@ -15,13 +15,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
   }
 
-  if (isset($_POST['attendcheck'])) {
+  if (isset($_POST['attendcheck']) && isset($_POST['checkbox0'])) {
     $usercode = $_POST['usercode'];
     $sql_regupdate = "UPDATE eventregistration SET attend1 = 'yes' WHERE usercode = '$usercode'";
     $success_regupdate = mysqli_query($link, $sql_regupdate);
     if ($success_regupdate) {
       header("location:../alccodecheck3.php?uc=".$usercode);
     }
+  }
+  elseif (!isset($_POST['checkbox0']) && isset($_POST['attendcheck'])) {
+    $usercode = $_POST['usercode'];
+    header("location:../alccodecheck3.php?notck&uc=". $usercode);
   }
 }
 ?>

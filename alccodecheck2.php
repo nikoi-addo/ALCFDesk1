@@ -53,6 +53,9 @@
                         $success_codeverify = mysqli_query($link, $sql_codeverify);
                         if ($success_codeverify->num_rows > 0) {
                           $row = $success_codeverify->fetch_assoc();
+                          if ($row['attend1'] == "yes") {
+                            header("location:alccodecheck3.php?tck&uc=".$usercode);
+                          }
                         ?>
                         <input type="hidden" value="<?php echo $usercode;?>" name="usercode">
                         <input id="name" type="text" placeholder="<?php echo $row['fname'] . " " .$row['lname']; ?>" required disabled/>
@@ -60,13 +63,13 @@
                         <input type="text" id="tel" placeholder="<?php echo $row['phone']; ?>" required disabled/>
                         <input type="text" id="dob" placeholder="<?php echo $row['dob']; ?>" disabled/>
                         <input type="text" id="location" placeholder="<?php echo $row['location']; ?>" disabled/>
-                       
-                        <span>Tick below if Person is Present!<input type="checkbox" id="checkbox0" <?php if ($row['attend1'] == "yes") { echo "checked";} ?>></span>
+
+                        <span>Tick below if Person is Present!<input type="checkbox" name="checkbox0"></span>
 
                         <?php
                         }
                         ?>
-                       
+
                         <button type="submit" id="vsubmit" class="btn btn-info btn-block " style="color:white;" name="attendcheck">Verify</button>
                     </fieldset>
                 </form>
