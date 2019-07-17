@@ -67,7 +67,7 @@
                         <option value="cat0">What Day is Today?</option>
                         <option value="cat1">Friday 27th September 2019</option>
                         <option value="cat2">Saturday 28th September 2019 </option>
-                        <option value="cat3">Saturday 29th September 2019</option>
+                        <option value="cat3">Sunday 29th September 2019</option>
                         
                         </select>
 
