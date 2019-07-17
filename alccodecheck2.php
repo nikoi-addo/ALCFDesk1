@@ -63,8 +63,15 @@
                         <input type="text" id="tel" placeholder="<?php echo $row['phone']; ?>" required disabled/>
                         <input type="text" id="dob" placeholder="<?php echo $row['dob']; ?>" disabled/>
                         <input type="text" id="location" placeholder="<?php echo $row['location']; ?>" disabled/>
+                        <select class="form-control custom-select" data-placeholder="What Day is Today?" tabindex="1" name="source">
+                        <option value="cat0">What Day is Today?</option>
+                        <option value="cat1">Friday 27th September 2019</option>
+                        <option value="cat2">Saturday 28th September 2019 </option>
+                        <option value="cat3">Saturday 29th September 2019</option>
+                        
+                        </select>
 
-                        <span>Tick below if Person is Present!<input type="checkbox" name="checkbox0"></span>
+                        <span>Click to Verify !!!</span>
 
                         <?php
                         }
