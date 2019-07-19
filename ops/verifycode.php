@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     $success_regupdate = mysqli_query($link, $sql_regupdate);
     if ($success_regupdate) {
-      header("location:../alccodecheck3.php?uc=".$usercode);
+      header("location:../alccodecheck3.php?tck&uc=".$usercode);
     }
   }
   elseif (!isset($_POST['checkbox0']) && isset($_POST['attendcheck'])) {

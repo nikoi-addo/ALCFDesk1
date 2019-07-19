@@ -46,15 +46,16 @@
                     <fieldset>
                       <?php
                       $usercode = $_GET['uc'];
+                      echo "$usercode";
                       $concusercode = substr("$usercode", 5);
-                      $sql_codeverify = "SELECT fname, lname, usercode FROM eventregistration WHERE id = $concusercode ";
+                      $sql_codeverify = "SELECT fname, lname FROM eventregistration WHERE id = $concusercode ";
                       $success_codeverify = mysqli_query($link, $sql_codeverify);
                       if ($success_codeverify->num_rows > 0) {
                         $row = $success_codeverify->fetch_assoc();
                         if (isset($_GET['tck']) && isset($_GET['uc'])) {
                         ?>
                           <h2 class="fs-title">Check Successful</h2>
-                          <h3 id="fs-subtitle1" class="alert alert-danger"><?php echo $row['fname']. " ". $row['lname']; ?>  has already been verified!!!</h3>
+                          <h3 id="fs-subtitle1" class="alert alert-success"><?php echo $row['fname']. " ". $row['lname']; ?>  has already been verified!!!</h3>
                       <?php
                         }
                         elseif (isset($_GET['notck']) && isset($_GET['uc'])){
