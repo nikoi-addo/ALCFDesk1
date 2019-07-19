@@ -113,9 +113,9 @@
                                  </span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="index.php">Registration Form</a></li>
-                                <li><a href="javascript:void(0)">Friday Table</a></li>
-                                <li><a href="javascript:void(0)">Saturday Table</a></li>
-                                <li><a href="javascript:void(0)">Sunday Table</a></li>
+                                <li><a href="usertablefri.php">Friday Table</a></li>
+                                <li><a href="usertablesat.php">Saturday Table</a></li>
+                                <li><a href="usertablesun.php">Sunday Table</a></li>
                                 <li><a href="usertable.php">User Tables <b>All Users</a></li>
                                 
                             </ul>
@@ -174,9 +174,9 @@
                                                 <th>Location</th>
                                                 <th>Info about program?</th>
                                                 <th>Expectations</th>
-                                                <th>Friday</th>
+                                              
                                                 <th>Saturday</th>
-                                                <th>Sunday</th>
+                                               
                                                 <th>Registrar</th>
                                             </tr>
                                         </thead>
