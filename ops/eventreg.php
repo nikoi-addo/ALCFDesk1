@@ -4,7 +4,7 @@
   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     //Initializing variables
     $usercode = $registrar = $fname = $lname = $email = $phone = $location = $dob = $dateattend1  = $dateattend2  = $dateattend3 = $source = $expectations = "";
-
+    $attend1 = $attend2 = $attend3 = "no";
     // $usercode = $_POST['usercode'];
     $registrar = $_POST['registrar'];
     $registrar = mysqli_real_escape_string($link, $registrar);
@@ -24,30 +24,17 @@
     $expectations = $_POST['shortdescription'];
     $expectations = mysqli_real_escape_string($link, $expectations);
     //Validating Checkboxes for dates
-    if (!empty($_POST['dattend1'])) {
-      $dattend1 = $_POST['dattend1'];
-      $dattend1 = mysqli_real_escape_string($link, $dattend1);
+    if ($_POST['attend'] == "fri") {
+      $attend1 = "yes";
     }
-    else {
-      $dattend1 = "no";
+    if ($_POST['attend'] == "sat") {
+      $attend2 = "yes";
     }
-
-    if (!empty($_POST['dattend2'])) {
-      $dattend2 = $_POST['dattend2'];
-      $dattend2 = mysqli_real_escape_string($link, $dattend2);
-    }
-    else {
-      $dattend2 = "no";
-    }
-    if (!empty($_POST['dattend3'])) {
-      $dattend3 = $_POST['dattend3'];
-      $dattend3 = mysqli_real_escape_string($link, $dattend3);
-    }
-    else {
-      $dattend3 = "no";
+    if ($_POST['attend'] == "sun") {
+      $attend3 = "yes";
     }
 
-    $sql_insertregdetails = "INSERT INTO eventregistration (fname, lname, email, phone, location, dob, dattend1, dattend2, dattend3, source, expectations, registrar) VALUES('$fname', '$lname', '$email', '$phone', '$location', '$dob', '$dattend1', '$dattend2', '$dattend3', '$source', '$expectations', '$registrar')";
+    $sql_insertregdetails = "INSERT INTO eventregistration (fname, lname, email, phone, location, dob, attend1, attend2, attend3, source, expectations, registrar) VALUES('$fname', '$lname', '$email', '$phone', '$location', '$dob', '$attend1', '$attend2', '$attend3', '$source', '$expectations', '$registrar')";
     $success_insertregdetails = mysqli_query($link, $sql_insertregdetails);
     if ($success_insertregdetails) {
       $lastid = mysqli_insert_id($link);

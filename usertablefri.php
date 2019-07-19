@@ -183,7 +183,7 @@
                                         <tbody>
                                           <?php
                                             //Displaying details of registration from database
-                                            $sql_eventreglist = "SELECT * FROM eventregistration WHERE dattend1 = 'yes'";
+                                            $sql_eventreglist = "SELECT * FROM eventregistration WHERE attend1 = 'yes'";
                                             $success_eventreglist = mysqli_query($link, $sql_eventreglist);
                                             if ($success_eventreglist->num_rows > 0) {
                                               $i = 1;
@@ -220,7 +220,7 @@
                                                   <td><?php echo $sources; ?></td>
                                                   <?php if ($row['expectations'] == "") { $expectations = "N/A";} elseif(!empty($row['expectations'])) {$expectations = $row['expectations'];} ?>
                                                   <td><?php echo $expectations; ?></td>
-                                                  <td><?php echo $row['dattend1']; ?></td>
+                                                  <td><?php echo $row['attend1']; ?></td>
                                                   <td><?php echo $row['registrar']; ?></td>
                                                 </tr>
                                           <?php

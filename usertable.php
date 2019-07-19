@@ -222,9 +222,9 @@
                                                   <td><?php echo $sources; ?></td>
                                                   <?php if ($row['expectations'] == "") { $expectations = "N/A";} elseif(!empty($row['expectations'])) {$expectations = $row['expectations'];} ?>
                                                   <td><?php echo $expectations; ?></td>
-                                                  <td><?php echo $row['dattend1']; ?></td>
-                                                  <td><?php echo $row['dattend2']; ?></td>
-                                                  <td><?php echo $row['dattend3']; ?></td>
+                                                  <td><?php echo $row['attend1']; ?></td>
+                                                  <td><?php echo $row['attend2']; ?></td>
+                                                  <td><?php echo $row['attend3']; ?></td>
                                                   <td><?php echo $row['registrar']; ?></td>
                                                 </tr>
                                           <?php
