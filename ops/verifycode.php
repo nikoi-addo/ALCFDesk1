@@ -5,7 +5,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   //To check is usercode exists
   if (isset($_POST['codecheck'])) {
     $usercode = $_POST['usercode'];
-    $sql_codeverify = "SELECT * FROM eventregistration WHERE usercode = '$usercode' ";
+    $concusercode = substr("$usercode", 5);
+    $sql_codeverify = "SELECT * FROM eventregistration WHERE id = $concusercode";
     $success_codeverify = mysqli_query($link, $sql_codeverify);
     if ($success_codeverify->num_rows > 0) {
       header("location:../alccodecheck2.php?uc=".$usercode);
@@ -19,15 +20,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   if (isset($_POST['attendcheck']) && isset($_POST['checkbox0'])) {
     $usercode = $_POST['usercode'];
     $source = $_POST['source'];
+    $concusercode = substr("$usercode", 5);
 
     if ($source == "cat1") {
-      $sql_regupdate = "UPDATE eventregistration SET attend1 = 'yes' WHERE usercode = '$usercode'";
+      $sql_regupdate = "UPDATE eventregistration SET attend1 = 'yes' WHERE id = $concusercode";
     }
     else if($source == "cat2"){
-      $sql_regupdate = "UPDATE eventregistration SET attend2 = 'yes' WHERE usercode = '$usercode'";
+      $sql_regupdate = "UPDATE eventregistration SET attend2 = 'yes' WHERE id = $concusercode";
     }
     else if($source == "cat3"){
-      $sql_regupdate = "UPDATE eventregistration SET attend3 = 'yes' WHERE usercode = '$usercode'";
+      $sql_regupdate = "UPDATE eventregistration SET attend3 = 'yes' WHERE id = $concusercode";
     }
     $success_regupdate = mysqli_query($link, $sql_regupdate);
     if ($success_regupdate) {
