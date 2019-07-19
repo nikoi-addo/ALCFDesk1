@@ -107,7 +107,7 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
 
-                     
+
                      <li> <a class="has-arrow waves-effect waves-dark" href="index.html"
                               aria-expanded="false"><i class="icon-note" ></i><span class="hide-menu">Menu
                                  </span></a>
@@ -117,7 +117,7 @@
                                 <li><a href="usertablesat.php">Saturday Table</a></li>
                                 <li><a href="usertablesun.php">Sunday Table</a></li>
                                 <li><a href="usertable.php">User Tables <b>All Users</a></li>
-                                
+
                             </ul>
                       </li>
                     </ul>
@@ -174,7 +174,7 @@
                                                 <th>Location</th>
                                                 <th>Info about program?</th>
                                                 <th>Expectations</th>
-                                                
+
                                                 <th>Sunday</th>
                                                 <th>Registrar</th>
                                             </tr>
@@ -190,7 +190,7 @@
                                           ?>
                                                 <tr>
                                                   <td><?php echo $i; ?></td>
-                                                  <td><?php echo $row['usercode']; ?></td>
+                                                  <td>ALC00<?php echo $row['id']; ?></td>
                                                   <td><?php echo $row['fname']; ?></td>
                                                   <td><?php echo $row['lname']; ?></td>
                                                   <td><?php echo $row['email']; ?></td>
