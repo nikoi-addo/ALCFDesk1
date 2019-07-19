@@ -48,7 +48,7 @@
                   </ul>
                     <fieldset>
                         <h2 class="fs-title">Please Enter Code for Verification</h2>
-                        <h3 class="fs-subtitle">For Today's Date : <?php echo date("l"); ?></h3>
+                        <h3 class="fs-subtitle">For Today's Date : <b><?php echo date("l"); ?></b></h3>
                         <?php if (isset($_GET['fail'])): ?>
                           <div class="alert alert-danger">Usercode not correct, Enter new code</div>
                         <?php endif; ?>

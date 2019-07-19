@@ -46,7 +46,7 @@
                 <!-- Logo -->
                 <!-- ============================================================== -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index-2.html">
+                    <a class="navbar-brand" href="index.php">
                         <!-- Logo icon --><b>
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                             <!-- Dark Logo icon -->
@@ -65,35 +65,7 @@
                 <!-- ============================================================== -->
                 <!-- End Logo -->
                 <!-- ============================================================== -->
-                <div class="navbar-collapse">
-                    <!-- ============================================================== -->
-                    <!-- toggle and nav items -->
-                    <!-- ============================================================== -->
-                    <ul class="navbar-nav mr-auto">
-                        <!-- This is  -->
-                        <li class="nav-item"> <a class="nav-link nav-toggler d-block d-md-none waves-effect waves-dark"
-                                href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
-                        <li class="nav-item"> <a class="nav-link sidebartoggler d-none waves-effect waves-dark"
-                                href="javascript:void(0)"><i class="icon-menu"></i></a> </li>
-                        <!-- ============================================================== -->
-                        <!-- Search -->
-                        <!-- ============================================================== -->
-
-                    </ul>
-                    <!-- ============================================================== -->
-                    <!-- User profile and search -->
-                    <!-- ============================================================== -->
-                    <ul class="navbar-nav my-lg-0">
-                        <!-- ============================================================== -->
-
-                        <!-- ============================================================== -->
-
-                        <!-- ============================================================== -->
-
-                        <!-- ============================================================== -->
-
-                    </ul>
-                </div>
+             
             </nav>
         </header>
         <!-- ============================================================== -->
@@ -119,7 +91,8 @@
                                 <li><a href="usertablesat.php">Saturday Table</a></li>
                                 <li><a href="usertablesun.php">Sunday Table</a></li>
                                 <li><a href="usertable.php">User Tables <b>All Users</a></li>
-
+                                <li><br></li>
+                                <li><a href="logout.php"><b>LOG OUT</a></li>
                             </ul>
                       </li>
                     </ul>
@@ -233,21 +206,7 @@
                                             }
                                           ?>
                                         </tbody>
-                                        <!-- <tfoot>
-                                            <tr>
-                                                <th>No.</th>
-                                                <th>Code</th>
-                                                <th>First Name</th>
-                                                <th>Last Name</th>
-                                                <th>Email</th>
-                                                <th>Phone Number</th>
-                                                <th>Date of Birth</th>
-                                                <th>Location</th>
-                                            </tr>
-                                        </tfoot>
-                                        <tbody>
-
-                                        </tbody> -->
+                                       
                                     </table>
                                 </div>
                             </div>

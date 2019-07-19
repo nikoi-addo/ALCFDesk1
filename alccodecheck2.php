@@ -48,7 +48,7 @@
                     </ul>
                     <fieldset>
                         <h2 class="fs-title">Personal Details</h2>
-                        <h3 class="fs-subtitle">We will never sell it</h3>
+                       
                          <?php
                         $usercode = $_GET['uc'];
                         $concusercode = substr("$usercode", 6);
@@ -73,6 +73,7 @@
                         <?php
                         }
                         ?>
+                        <span>Press Button</span>
 
                         <button type="submit" id="vsubmit" class="btn btn-info btn-block " style="color:white;" name="attendcheck">Verify</button>
                     </fieldset>
