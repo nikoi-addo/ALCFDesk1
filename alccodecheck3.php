@@ -59,7 +59,7 @@
                         if (isset($_GET['tck']) && isset($_GET['uc'])) {
                         ?>
                           <h2 class="fs-title">Check Successful</h2>
-                          <h3 id="fs-subtitle1" class="alert alert-success"><?php echo $row['fname']. " ". $row['lname']; ?>  has already been verified!!!</h3>
+                          <h3 id="fs-subtitle1" class="alert alert-success"><?php echo $row['fname']. " ". $row['lname']; ?>  has been verified successfully!!!</h3>
                       <?php
                         }
                         elseif (isset($_GET['notck']) && isset($_GET['uc'])){
