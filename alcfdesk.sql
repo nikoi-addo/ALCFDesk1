@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 19, 2019 at 04:13 PM
+-- Generation Time: Jul 19, 2019 at 08:59 PM
 -- Server version: 5.7.26-0ubuntu0.16.04.1
 -- PHP Version: 7.0.33-0ubuntu0.16.04.5
 
@@ -53,12 +53,9 @@ CREATE TABLE `eventregistration` (
   `phone` varchar(32) NOT NULL,
   `location` varchar(32) NOT NULL,
   `dob` varchar(16) NOT NULL,
-  `dattend1` varchar(3) NOT NULL,
-  `attend1` varchar(3) NOT NULL DEFAULT 'N/A',
-  `dattend2` varchar(3) NOT NULL,
-  `attend2` varchar(3) NOT NULL DEFAULT 'N/A',
-  `dattend3` varchar(3) NOT NULL,
-  `attend3` varchar(3) NOT NULL DEFAULT 'N/A',
+  `attend1` varchar(3) NOT NULL DEFAULT 'no',
+  `attend2` varchar(3) NOT NULL DEFAULT 'no',
+  `attend3` varchar(3) NOT NULL DEFAULT 'no',
   `source` varchar(4) NOT NULL,
   `expectations` text NOT NULL,
   `registrar` varchar(32) NOT NULL
@@ -68,14 +65,16 @@ CREATE TABLE `eventregistration` (
 -- Dumping data for table `eventregistration`
 --
 
-INSERT INTO `eventregistration` (`id`, `fname`, `lname`, `email`, `phone`, `location`, `dob`, `dattend1`, `attend1`, `dattend2`, `attend2`, `dattend3`, `attend3`, `source`, `expectations`, `registrar`) VALUES
-(1, 'a', 'b', 'a@g.com', '0263192377', 'a', '2019-07-11', 'no', 'N/A', 'yes', 'yes', 'yes', 'N/A', 'cat1', '', 'Rudimentary'),
-(2, 'My', 'Name', 'is@not.necessary', '02774839203', 'But', '2019-07-29', 'yes', 'N/A', 'no', 'N/A', 'yes', 'N/A', 'cat1', 'Great expectations, for the power of God to be revealed.', 'Rudimentary'),
-(3, 'Frank', 'Olsen', 'frolansekn@mail.com', '0303193299', 'Accra', '2019-07-09', 'no', 'N/A', 'yes', 'N/A', 'no', 'N/A', 'cat2', 'Great ones', 'Rudimentary'),
-(4, 'Lara', 'Vel', 'vellara@mailto.io', '124', 'Tema', '2019-07-09', 'no', 'N/A', 'yes', 'N/A', 'no', 'N/A', 'cat2', 'HOpe', 'Rudimentary'),
-(6, 'Load', 'Balance', 'load@gmail.com', '02774839203', 'Tarkwa', '', 'no', 'yes', 'no', 'N/A', 'yes', 'N/A', 'cat0', '', 'Rudimentary'),
-(7, 'Note', 'Note', 'note2@email.com', '', 'Soma', '', 'no', 'N/A', 'no', 'N/A', 'no', 'N/A', 'cat0', '', 'Rudimentary'),
-(11, 'nopa', 'nopa', 'note2@email.com', '', 'jaljlfkjd', '', 'no', 'N/A', 'yes', 'N/A', 'no', 'N/A', 'cat0', '', 'Rudimentary');
+INSERT INTO `eventregistration` (`id`, `fname`, `lname`, `email`, `phone`, `location`, `dob`, `attend1`, `attend2`, `attend3`, `source`, `expectations`, `registrar`) VALUES
+(1, 'a', 'b', 'a@g.com', '0263192377', 'a', '2019-07-11', 'no', 'yes', 'yes', 'cat1', '', 'Rudimentary'),
+(2, 'My', 'Name', 'is@not.necessary', '02774839203', 'But', '2019-07-29', 'no', 'no', 'no', 'cat1', 'Great expectations, for the power of God to be revealed.', 'Rudimentary'),
+(3, 'Frank', 'Olsen', 'frolansekn@mail.com', '0303193299', 'Accra', '2019-07-09', 'no', 'no', 'no', 'cat2', 'Great ones', 'Rudimentary'),
+(4, 'Lara', 'Vel', 'vellara@mailto.io', '124', 'Tema', '2019-07-09', 'no', 'no', 'no', 'cat2', 'HOpe', 'Rudimentary'),
+(6, 'Load', 'Balance', 'load@gmail.com', '02774839203', 'Tarkwa', '', 'yes', 'N/A', 'no', 'cat0', '', 'Rudimentary'),
+(7, 'Note', 'Note', 'note2@email.com', '', 'Soma', '', 'no', 'N/A', 'no', 'cat0', '', 'Rudimentary'),
+(11, 'nopa', 'nopa', 'note2@email.com', '', 'jaljlfkjd', '', 'no', 'N/A', 'no', 'cat0', '', 'Rudimentary'),
+(12, 'Tribe', 'Freedom', 'tfree@gmail.com', '', 'Tarkwa', '', 'yes', 'sat', 'no', 'cat1', '', 'Mingleemma'),
+(13, 'Top', 'Fillier', 'tfillier@yahoo.co.uk', '', 'Tema', '', 'no', 'no', 'yes', 'cat0', '', 'Mingleemma');
 
 --
 -- Indexes for dumped tables
@@ -106,7 +105,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `eventregistration`
 --
 ALTER TABLE `eventregistration`
-  MODIFY `id` int(16) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(16) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
