@@ -5,7 +5,7 @@
     //Initializing variables
     $usercode = $registrar = $fname = $lname = $email = $phone = $location = $dob = $dateattend1  = $dateattend2  = $dateattend3 = $source = $expectations = "";
 
-    $usercode = $_POST['usercode'];
+    // $usercode = $_POST['usercode'];
     $registrar = $_POST['registrar'];
     $registrar = mysqli_real_escape_string($link, $registrar);
     $fname = $_POST['firstName'];
@@ -25,7 +25,7 @@
     $expectations = mysqli_real_escape_string($link, $expectations);
     //Validating Checkboxes for dates
     if (!empty($_POST['dattend1'])) {
-      $dattend1 = $_POST['dattend3'];
+      $dattend1 = $_POST['dattend1'];
       $dattend1 = mysqli_real_escape_string($link, $dattend1);
     }
     else {
@@ -47,10 +47,11 @@
       $dattend3 = "no";
     }
 
-    $sql_insertregdetails = "INSERT INTO eventregistration (fname, lname, email, phone, location, dob, dattend1, dattend2, dattend3, source, expectations, usercode, registrar) VALUES('$fname', '$lname', '$email', '$phone', '$location', '$dob', '$dattend1', '$dattend2', '$dattend3', '$source', '$expectations', '$usercode', '$registrar')";
+    $sql_insertregdetails = "INSERT INTO eventregistration (fname, lname, email, phone, location, dob, dattend1, dattend2, dattend3, source, expectations, registrar) VALUES('$fname', '$lname', '$email', '$phone', '$location', '$dob', '$dattend1', '$dattend2', '$dattend3', '$source', '$expectations', '$registrar')";
     $success_insertregdetails = mysqli_query($link, $sql_insertregdetails);
     if ($success_insertregdetails) {
-      header("location:../index.php?rsp=0");
+      $lastid = mysqli_insert_id($link);
+      header("location:../index.php?rsp=0&regcode=". $lastid);
     }
     else {
       header("location:../index.php?rsp=1");

@@ -53,9 +53,6 @@
                         $success_codeverify = mysqli_query($link, $sql_codeverify);
                         if ($success_codeverify->num_rows > 0) {
                           $row = $success_codeverify->fetch_assoc();
-                          if ($row['attend1'] == "yes") {
-                            header("location:alccodecheck3.php?tck&uc=".$usercode);
-                          }
                         ?>
                         <input type="hidden" value="<?php echo $usercode;?>" name="usercode">
                         <input id="name" type="text" placeholder="<?php echo $row['fname'] . " " .$row['lname']; ?>" required disabled/>
@@ -65,14 +62,12 @@
                         <input type="text" id="location" placeholder="<?php echo $row['location']; ?>" disabled/>
                         <select class="form-control custom-select" data-placeholder="What Day is Today?" tabindex="1" name="source">
                         <option value="cat0">What Day is Today?</option>
-                        <option value="cat1">Friday 27th September 2019</option>
-                        <option value="cat2">Saturday 28th September 2019 </option>
-                        <option value="cat3">Sunday 29th September 2019</option>
-                        
+                        <option value="cat1" <?php if ($row['attend1'] == "yes") { echo "disabled"; } if ($row['dattend1'] == "no") {echo "disabled";} ?>>Friday 27th September 2019 <?php if ($row['attend1'] == "yes") { echo "Verified"; } if ($row['dattend1'] == "no") {echo "Not Registered";} ?></option>
+                        <option value="cat2" <?php if ($row['attend2'] == "yes") { echo "disabled"; } if ($row['dattend2'] == "no") {echo "disabled";} ?>>Saturday 28th September 2019 <?php if ($row['attend2'] == "yes") { echo "Verified"; } if ($row['dattend2'] == "no") {echo "Not Registered";} ?></option>
+                        <option value="cat3" <?php if ($row['attend3'] == "yes") { echo "disabled"; } if ($row['dattend3'] == "no") {echo "disabled";} ?>>Sunday 29th September 2019 <?php if ($row['attend3'] == "yes") { echo "Verified"; } if ($row['dattend3'] == "no") {echo "Not Registered";} ?></option>
+
                         </select>
-
-                        <span>Click to Verify !!!</span>
-
+                        <span>Click to <span>Verify !!!<input type="checkbox" name="checkbox0"></span></span>
                         <?php
                         }
                         ?>

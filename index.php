@@ -93,7 +93,7 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
 
-                      
+
                       <li> <a class="has-arrow waves-effect waves-dark" href="index.html"
                               aria-expanded="false"><i class="icon-note" ></i><span class="hide-menu">Menu
                                  </span></a>
@@ -103,10 +103,10 @@
                                 <li><a href="javascript:void(0)">Saturday Table</a></li>
                                 <li><a href="javascript:void(0)">Sunday Table</a></li>
                                 <li><a href="usertable.php">User Tables <b>All Users</a></li>
-                                
+
                             </ul>
                       </li>
-                    
+
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -131,7 +131,7 @@
                 </div>
                 <?php
                   if (isset($_GET['rsp']) && $_GET['rsp'] == 0) {?>
-                    <div class="alert alert-success" id="rspalert">Registration details inserted successfully!<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></div>
+                    <div class="alert alert-success" id="rspalert1">Registration details inserted successfully!<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><br>Usercode is; <h3><center>ALC00<?php echo $_GET['regcode']; ?></center></h3></div>
                 <?php  }
                   elseif (isset($_GET['rsp']) && $_GET['rsp'] == 1) {?>
                     <div class="alert alert-danger" id="rspalert">Unable to insert registration details. Try again!<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></div>
@@ -200,10 +200,10 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                               <div class="form-group">
-                                                   <label class="control-label">Which Day is Today?</label><br>
-                                                     <input type="checkbox" name="dattend1" value="yes"> <b>Friday</b>27th September 2019<br>
-                                                     <input type="checkbox" name="dattend2" value="yes"> <b>Saturday</b>28th September 2019<br>
-                                                     <input type="checkbox" name="dattend3" value="yes"> <b>Sunday</b>29th September 2019
+                                                   <label class="control-label">Which Day will you be attending for?</label><br>
+                                                     <input type="checkbox" name="dattend1" value="yes"> <b>Friday</b> 27th September 2019<br>
+                                                     <input type="checkbox" name="dattend2" value="yes"> <b>Saturday</b> 28th September 2019<br>
+                                                     <input type="checkbox" name="dattend3" value="yes"> <b>Sunday</b> 29th September 2019
                                               </div>
                                                 <div class="form-group">
                                                     <label class="control-label">How did you hear about the program?</label>
@@ -216,33 +216,16 @@
                                                     </select>
                                                 </div>
                                             </div>
-
+                                            <input type="hidden" name="registrar" value="<?php echo "Rudimentary"; ?>">
                                             <br><div class="col-md-12">
                                                 <div class="form-group">
                                                     <label for="shortDescription">What are your expectations for the program :</label>
                                                     <textarea name="shortdescription" id="shortDescription3" rows="6" class="form-control"></textarea>
                                                 </div>
                                             </div>
+                                            <input type="submit" value="Submit" role="menuitem" style="font-size:24px; background-color:black; color: white;">
                                         </div>
                                     </section>
-                                    <!-- Step 3 -->
-                                    <h6>Code Allocation</h6>
-                                    <section>
-                                        <div class="row">
-                                           <br><div class="col-md-12">
-                                                <div class="form-group ">
-                                                  <?php $usercode = range(1, 1000); ?>
-
-                                                  <label>Kindly copy this code for later referral</label><br>
-                                                  User Code:<b><h1><?php echo $usercode; ?></h1></b>
-                                                  <input type="hidden" name="usercode" value="<?php echo $usercode; ?>">
-                                                  <input type="hidden" name="registrar" value="<?php echo "Rudimentary"; ?>">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <input type="submit" value="Submit" role="menuitem" style="font-size:24px; background-color:black; color: white;">
-                                    </section>
-
                                 </form>
                             </div>
                         </div>
