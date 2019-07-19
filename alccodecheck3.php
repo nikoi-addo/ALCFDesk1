@@ -46,7 +46,8 @@
                     <fieldset>
                       <?php
                       $usercode = $_GET['uc'];
-                      $sql_codeverify = "SELECT fname, lname, usercode FROM eventregistration WHERE usercode = '$usercode' ";
+                      $concusercode = substr("$usercode", 5);
+                      $sql_codeverify = "SELECT fname, lname, usercode FROM eventregistration WHERE id = $concusercode ";
                       $success_codeverify = mysqli_query($link, $sql_codeverify);
                       if ($success_codeverify->num_rows > 0) {
                         $row = $success_codeverify->fetch_assoc();
