@@ -49,7 +49,8 @@
                         <h3 class="fs-subtitle">We will never sell it</h3>
                          <?php
                         $usercode = $_GET['uc'];
-                        $sql_codeverify = "SELECT * FROM eventregistration WHERE usercode = '$usercode' ";
+                        $concusercode = substr("$usercode", 5);
+                        $sql_codeverify = "SELECT * FROM eventregistration WHERE id = $concusercode";
                         $success_codeverify = mysqli_query($link, $sql_codeverify);
                         if ($success_codeverify->num_rows > 0) {
                           $row = $success_codeverify->fetch_assoc();
