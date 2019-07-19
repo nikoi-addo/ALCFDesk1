@@ -1,3 +1,8 @@
+<?php
+  session_start();
+  include 'ops/dbcon.php';
+  if (isset($_SESSION['uname']) && $_SESSION['loggedin'] == true) {
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -131,7 +136,7 @@
                 </div>
                 <?php
                   if (isset($_GET['rsp']) && $_GET['rsp'] == 0) {?>
-                    <div class="alert alert-success" id="rspalert1">Registration details inserted successfully!<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><br>Usercode is; <h3><center>ALC00<?php echo $_GET['regcode']; ?></center></h3></div>
+                    <div class="alert alert-success" id="rspalert1">Registration details inserted successfully!<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><br>Usercode is; <h3><center>ALC000<?php echo $_GET['regcode']; ?></center></h3></div>
                 <?php  }
                   elseif (isset($_GET['rsp']) && $_GET['rsp'] == 1) {?>
                     <div class="alert alert-danger" id="rspalert">Unable to insert registration details. Try again!<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></div>
@@ -216,7 +221,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <input type="hidden" name="registrar" value="<?php echo "Rudimentary"; ?>">
+                                            <input type="hidden" name="registrar" value="<?php echo $_SESSION['uname']; ?>">
                                             <br><div class="col-md-12">
                                                 <div class="form-group">
                                                     <label for="shortDescription">What are your expectations for the program :</label>
@@ -346,6 +351,9 @@
         })
     </script>
 </body>
-
-
 </html>
+<?php }
+  else {
+    header("location:login.php?lfail");
+  }
+ ?>

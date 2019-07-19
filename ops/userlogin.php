@@ -13,6 +13,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     header("location:../login.php?ufail=".$username);
   }
   else {
+    session_start();
+    $_SESSION['uname'] = $username;
+    $_SESSION['loggedin'] = true;
     header("location:../index.php");
   }
 

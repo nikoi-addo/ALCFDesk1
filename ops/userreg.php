@@ -16,6 +16,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   else {
     $success_insertadmin = mysqli_query($link, $sql_insertadmin);
     if ($success_insertadmin) {
+      session_start();
+      $_SESSION['uname'] = $username;
+      $_SESSION['loggedin'] = true;
       header("location:../index.php");
     }
     else {

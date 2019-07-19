@@ -1,5 +1,7 @@
 <?php
+  session_start();
   include 'ops/dbcon.php';
+  if (isset($_SESSION['uname']) && $_SESSION['loggedin'] == true) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,7 +51,7 @@
                         <h3 class="fs-subtitle">We will never sell it</h3>
                          <?php
                         $usercode = $_GET['uc'];
-                        $concusercode = substr("$usercode", 5);
+                        $concusercode = substr("$usercode", 6);
                         $sql_codeverify = "SELECT * FROM eventregistration WHERE id = $concusercode";
                         $success_codeverify = mysqli_query($link, $sql_codeverify);
                         if ($success_codeverify->num_rows > 0) {
@@ -116,3 +118,8 @@
 
 
 </html>
+<?php }
+  else {
+    header("location:login.php?lfail");
+  }
+ ?>

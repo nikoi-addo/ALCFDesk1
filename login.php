@@ -48,6 +48,9 @@
                           <div class="alert alert-danger">Username or password is incorrect!!!</div>
                         <?php
                           }
+                          elseif (isset($_GET['lfail'])) { ?>
+                            <div class="alert alert-danger">You must login first!!</div>
+                        <?php  }
                          ?>
                         <div class="col-xs-12">
                             <input class="form-control" type="text" required="" placeholder="Username" name="username" value="<?php if (isset($_GET['ufail'])) {echo $_GET['ufail'];} ?>">

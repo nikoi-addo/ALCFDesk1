@@ -1,5 +1,7 @@
 <?php
+  session_start();
   include 'ops/dbcon.php';
+  if (isset($_SESSION['uname']) && $_SESSION['loggedin'] == true) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -190,7 +192,7 @@
                                           ?>
                                                 <tr>
                                                   <td><?php echo $i; ?></td>
-                                                  <td>ALC00<?php echo $row['id']; ?></td>
+                                                  <td>ALC000<?php echo $row['id']; ?></td>
                                                   <td><?php echo $row['fname']; ?></td>
                                                   <td><?php echo $row['lname']; ?></td>
                                                   <td><?php echo $row['email']; ?></td>
@@ -371,3 +373,8 @@
 
 
 </html>
+<?php }
+  else {
+    header("location:login.php?lfail");
+  }
+ ?>
