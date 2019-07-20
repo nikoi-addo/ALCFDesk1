@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   //To check is usercode exists
   if (isset($_POST['codecheck'])) {
     $usercode = $_POST['usercode'];
-    $concusercode = substr("$usercode", 6);
+    $concusercode = substr("$usercode", 5);
     $sql_codeverify = "SELECT * FROM eventregistration WHERE id = $concusercode";
     $success_codeverify = mysqli_query($link, $sql_codeverify);
     if ($success_codeverify->num_rows > 0) {
@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   if (isset($_POST['attendcheck'])) {
     $usercode = $_POST['usercode'];
     $source = $_POST['source'];
-    $concusercode = substr("$usercode", 6);
+    $concusercode = substr("$usercode", 5);
 
     if ($source == "cat1") {
       $sql_regupdate = "UPDATE eventregistration SET attend1 = 'yes' WHERE id = $concusercode";

@@ -51,7 +51,7 @@
                       <?php
                       $usercode = $_GET['uc'];
                       echo "$usercode";
-                      $concusercode = substr("$usercode", 6);
+                      $concusercode = substr("$usercode", 5);
                       $sql_codeverify = "SELECT fname, lname FROM eventregistration WHERE id = $concusercode ";
                       $success_codeverify = mysqli_query($link, $sql_codeverify);
                       if ($success_codeverify->num_rows > 0) {
