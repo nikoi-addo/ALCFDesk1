@@ -164,7 +164,7 @@
                                           ?>
                                                 <tr>
                                                   <td><?php echo $i; ?></td>
-                                                  <td>ALC000<?php echo $row['id']; ?></td>
+                                                  <td>ALC00<?php echo $row['id']; ?></td>
                                                   <td><?php echo $row['fname']; ?></td>
                                                   <td><?php echo $row['lname']; ?></td>
                                                   <td><?php echo $row['email']; ?></td>
@@ -202,21 +202,7 @@
                                             }
                                           ?>
                                         </tbody>
-                                        <!-- <tfoot>
-                                            <tr>
-                                                <th>No.</th>
-                                                <th>Code</th>
-                                                <th>First Name</th>
-                                                <th>Last Name</th>
-                                                <th>Email</th>
-                                                <th>Phone Number</th>
-                                                <th>Date of Birth</th>
-                                                <th>Location</th>
-                                            </tr>
-                                        </tfoot>
-                                        <tbody>
-
-                                        </tbody> -->
+                                       
                                     </table>
                                 </div>
                             </div>

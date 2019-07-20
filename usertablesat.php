@@ -166,7 +166,7 @@ href="assets/node_modules/datatables.net-bs4/css/responsive.dataTables.min.css">
                             ?>
                             <tr>
                               <td><?php echo $i; ?></td>
-                              <td>ALC000<?php echo $row['id']; ?></td>
+                              <td>ALC00<?php echo $row['id']; ?></td>
                               <td><?php echo $row['fname']; ?></td>
                               <td><?php echo $row['lname']; ?></td>
                               <td><?php echo $row['email']; ?></td>
