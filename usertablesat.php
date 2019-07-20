@@ -204,21 +204,7 @@ href="assets/node_modules/datatables.net-bs4/css/responsive.dataTables.min.css">
                         }
                         ?>
                       </tbody>
-                      <!-- <tfoot>
-                      <tr>
-                      <th>No.</th>
-                      <th>Code</th>
-                      <th>First Name</th>
-                      <th>Last Name</th>
-                      <th>Email</th>
-                      <th>Phone Number</th>
-                      <th>Date of Birth</th>
-                      <th>Location</th>
-                    </tr>
-                  </tfoot>
-                  <tbody>
-
-                </tbody> -->
+                     
               </table>
             </div>
           </div>

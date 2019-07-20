@@ -198,10 +198,14 @@
                                                     <label class="control-label">How did you hear about the program?</label>
                                                     <select class="form-control custom-select" data-placeholder="How did you hear about the program?" tabindex="1" name="source">
                                                     	<option value="cat0">Select Options</option>
-                                                        <option value="cat1">A member of the church</option>
-                                                        <option value="cat2">Social Media</option>
-                                                        <option value="cat3">Flyer</option>
-                                                        <option value="cat4">Family Friend</option>
+                                                    	<option value="cat1">Sunday Service</option>
+                                                        <option value="cat2">Flyer</option>
+                                                        <option value="cat3">Fellowship Meetings</option>
+                                                        <option value="cat4">Social Media</option>
+                                                        <option value="cat5">Through A Friend</option>
+                                                        <option value="cat6">Through Pastor Roy King</option>
+                                                        <option value="cat7">Through My Pastor</option>
+                                                        <option value="cat8">Leaders Meeting</option>
                                                     </select>
                                                 </div>
                                             </div>

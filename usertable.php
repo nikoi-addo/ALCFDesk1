@@ -180,16 +180,28 @@
                                                       $sources = "N/A";
                                                     }
                                                     if ($row['source'] == "cat1") {
-                                                      $sources = "A member of the church";
+                                                      $sources = "Sunday Service";
                                                     }
                                                     if ($row['source'] == "cat2") {
-                                                      $sources = "Social Media";
-                                                    }
-                                                    if ($row['source'] == "cat3") {
                                                       $sources = "Flyer";
                                                     }
+                                                    if ($row['source'] == "cat3") {
+                                                      $sources = "Fellowship Meetings";
+                                                    }
                                                     if ($row['source'] == "cat4") {
-                                                      $sources = "Family Friend";
+                                                      $sources = "Social Media";
+                                                    }
+                                                    if ($row['source'] == "cat5") {
+                                                      $sources = "Through A Friend";
+                                                    }
+                                                    if ($row['source'] == "cat6") {
+                                                      $sources = "Through Pastor Roy King";
+                                                    }
+                                                    if ($row['source'] == "cat7") {
+                                                      $sources = "Through My Pastor";
+                                                    }
+                                                    if ($row['source'] == "cat8") {
+                                                      $sources = "Leaders Meeting";
                                                     }
                                                   ?>
                                                   <td><?php echo $sources; ?></td>
