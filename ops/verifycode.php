@@ -32,10 +32,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       $sql_regupdate = "UPDATE eventregistration SET attend1 = 'yes', tattend1 = $cur_time WHERE id = $concusercode";
     }
     else if($source == "cat2"){
-      $sql_regupdate = "UPDATE eventregistration SET attend2 = 'yes' tattend2 = $cur_time WHERE id = $concusercode";
+      $sql_regupdate = "UPDATE eventregistration SET attend2 = 'yes', tattend2 = $cur_time WHERE id = $concusercode";
     }
     else if($source == "cat3"){
-      $sql_regupdate = "UPDATE eventregistration SET attend3 = 'yes' tattend3 = $cur_time WHERE id = $concusercode";
+      $sql_regupdate = "UPDATE eventregistration SET attend3 = 'yes', tattend3 = $cur_time WHERE id = $concusercode";
     }
     $success_regupdate = mysqli_query($link, $sql_regupdate);
     if ($success_regupdate) {
