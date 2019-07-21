@@ -46,8 +46,8 @@
       header("location:../index.php?rsp=0&regcode=". $lastid);
     }
     else {
-      // header("location:../index.php?rsp=1");
-      echo mysqli_error($link);
+      header("location:../index.php?rsp=1");
+      // echo mysqli_error($link);
     }
 
   }
