@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 19, 2019 at 08:59 PM
+-- Generation Time: Jul 21, 2019 at 06:12 PM
 -- Server version: 5.7.26-0ubuntu0.16.04.1
 -- PHP Version: 7.0.33-0ubuntu0.16.04.5
 
@@ -56,6 +56,9 @@ CREATE TABLE `eventregistration` (
   `attend1` varchar(3) NOT NULL DEFAULT 'no',
   `attend2` varchar(3) NOT NULL DEFAULT 'no',
   `attend3` varchar(3) NOT NULL DEFAULT 'no',
+  `tattend1` double NOT NULL DEFAULT '0',
+  `tattend2` double NOT NULL DEFAULT '0',
+  `tattend3` double NOT NULL DEFAULT '0',
   `source` varchar(4) NOT NULL,
   `expectations` text NOT NULL,
   `registrar` varchar(32) NOT NULL
@@ -65,16 +68,18 @@ CREATE TABLE `eventregistration` (
 -- Dumping data for table `eventregistration`
 --
 
-INSERT INTO `eventregistration` (`id`, `fname`, `lname`, `email`, `phone`, `location`, `dob`, `attend1`, `attend2`, `attend3`, `source`, `expectations`, `registrar`) VALUES
-(1, 'a', 'b', 'a@g.com', '0263192377', 'a', '2019-07-11', 'no', 'yes', 'yes', 'cat1', '', 'Rudimentary'),
-(2, 'My', 'Name', 'is@not.necessary', '02774839203', 'But', '2019-07-29', 'no', 'no', 'no', 'cat1', 'Great expectations, for the power of God to be revealed.', 'Rudimentary'),
-(3, 'Frank', 'Olsen', 'frolansekn@mail.com', '0303193299', 'Accra', '2019-07-09', 'no', 'no', 'no', 'cat2', 'Great ones', 'Rudimentary'),
-(4, 'Lara', 'Vel', 'vellara@mailto.io', '124', 'Tema', '2019-07-09', 'no', 'no', 'no', 'cat2', 'HOpe', 'Rudimentary'),
-(6, 'Load', 'Balance', 'load@gmail.com', '02774839203', 'Tarkwa', '', 'yes', 'N/A', 'no', 'cat0', '', 'Rudimentary'),
-(7, 'Note', 'Note', 'note2@email.com', '', 'Soma', '', 'no', 'N/A', 'no', 'cat0', '', 'Rudimentary'),
-(11, 'nopa', 'nopa', 'note2@email.com', '', 'jaljlfkjd', '', 'no', 'N/A', 'no', 'cat0', '', 'Rudimentary'),
-(12, 'Tribe', 'Freedom', 'tfree@gmail.com', '', 'Tarkwa', '', 'yes', 'sat', 'no', 'cat1', '', 'Mingleemma'),
-(13, 'Top', 'Fillier', 'tfillier@yahoo.co.uk', '', 'Tema', '', 'no', 'no', 'yes', 'cat0', '', 'Mingleemma');
+INSERT INTO `eventregistration` (`id`, `fname`, `lname`, `email`, `phone`, `location`, `dob`, `attend1`, `attend2`, `attend3`, `tattend1`, `tattend2`, `tattend3`, `source`, `expectations`, `registrar`) VALUES
+(1, 'a', 'b', 'a@g.com', '0263192377', 'a', '2019-07-11', 'no', 'yes', 'yes', 0, 0, 0, 'cat1', '', 'Rudimentary'),
+(2, 'My', 'Name', 'is@not.necessary', '02774839203', 'But', '2019-07-29', 'no', 'no', 'no', 0, 0, 0, 'cat1', 'Great expectations, for the power of God to be revealed.', 'Rudimentary'),
+(3, 'Frank', 'Olsen', 'frolansekn@mail.com', '0303193299', 'Accra', '2019-07-09', 'no', 'no', 'no', 0, 0, 0, 'cat2', 'Great ones', 'Rudimentary'),
+(4, 'Lara', 'Vel', 'vellara@mailto.io', '124', 'Tema', '2019-07-09', 'no', 'no', 'no', 0, 0, 0, 'cat2', 'HOpe', 'Rudimentary'),
+(6, 'Load', 'Balance', 'load@gmail.com', '02774839203', 'Tarkwa', '', 'yes', 'N/A', 'no', 0, 0, 0, 'cat0', '', 'Rudimentary'),
+(7, 'Note', 'Note', 'note2@email.com', '', 'Soma', '', 'no', 'N/A', 'no', 0, 0, 0, 'cat0', '', 'Rudimentary'),
+(11, 'nopa', 'nopa', 'note2@email.com', '', 'jaljlfkjd', '', 'no', 'N/A', 'no', 0, 0, 0, 'cat0', '', 'Rudimentary'),
+(12, 'Tribe', 'Freedom', 'tfree@gmail.com', '', 'Tarkwa', '', 'yes', 'sat', 'no', 0, 0, 0, 'cat1', '', 'Mingleemma'),
+(13, 'Top', 'Fillier', 'tfillier@yahoo.co.uk', '', 'Tema', '', 'no', 'no', 'yes', 0, 0, 0, 'cat0', '', 'Mingleemma'),
+(14, 'Made', 'In', 'tarkwa@256.time', '', 'Accra', '', 'no', 'yes', 'no', 0, 0, 0, 'cat2', '', 'Mingleemma'),
+(15, 'Lead', 'Waverq', 'lead@gmail.com', '', 'Tema', '', 'yes', 'yes', 'no', 1563732086, 1563731966, 0, 'cat0', '', 'Mingleemma');
 
 --
 -- Indexes for dumped tables
@@ -105,7 +110,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `eventregistration`
 --
 ALTER TABLE `eventregistration`
-  MODIFY `id` int(16) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(16) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

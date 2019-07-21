@@ -65,7 +65,7 @@
                 <!-- ============================================================== -->
                 <!-- End Logo -->
                 <!-- ============================================================== -->
-             
+
             </nav>
         </header>
         <!-- ============================================================== -->
@@ -150,8 +150,11 @@
                                                 <th>Info about program?</th>
                                                 <th>Expectations</th>
                                                 <th>Friday</th>
+                                                <th>Fri time</th>
                                                 <th>Saturday</th>
+                                                <th>Sat time</th>
                                                 <th>Sunday</th>
+                                                <th>Sun time</th>
                                                 <th>Registrar</th>
                                             </tr>
                                         </thead>
@@ -208,8 +211,11 @@
                                                   <?php if ($row['expectations'] == "") { $expectations = "N/A";} elseif(!empty($row['expectations'])) {$expectations = $row['expectations'];} ?>
                                                   <td><?php echo $expectations; ?></td>
                                                   <td><?php echo $row['attend1']; ?></td>
+                                                  <td><?php if ($row['tattend1'] == 0) { echo "N/A"; } else{ echo date("G:i", $row['tattend1']);} ?></td>
                                                   <td><?php echo $row['attend2']; ?></td>
+                                                  <td><?php if ($row['tattend2'] == 0) { echo "N/A"; } else{ echo date("G:i", $row['tattend2']);} ?></td>
                                                   <td><?php echo $row['attend3']; ?></td>
+                                                  <td><?php if ($row['tattend3'] == 0) { echo "N/A"; } else{ echo date("G:i", $row['tattend3']);} ?></td>
                                                   <td><?php echo $row['registrar']; ?></td>
                                                 </tr>
                                           <?php
@@ -218,7 +224,7 @@
                                             }
                                           ?>
                                         </tbody>
-                                       
+
                                     </table>
                                 </div>
                             </div>

@@ -65,7 +65,7 @@ href="assets/node_modules/datatables.net-bs4/css/responsive.dataTables.min.css">
       <!-- ============================================================== -->
       <!-- End Logo -->
       <!-- ============================================================== -->
-     
+
         </nav>
       </header>
       <!-- ============================================================== -->
@@ -149,9 +149,8 @@ href="assets/node_modules/datatables.net-bs4/css/responsive.dataTables.min.css">
                           <th>Location</th>
                           <th>Info about program?</th>
                           <th>Expectations</th>
-
                           <th>Saturday</th>
-
+                          <th>Time</th>
                           <th>Registrar</th>
                         </tr>
                       </thead>
@@ -196,6 +195,7 @@ href="assets/node_modules/datatables.net-bs4/css/responsive.dataTables.min.css">
                               <?php if ($row['expectations'] == "") { $expectations = "N/A";} elseif(!empty($row['expectations'])) {$expectations = $row['expectations'];} ?>
                               <td><?php echo $expectations; ?></td>
                               <td><?php echo $row['attend2']; ?></td>
+                              <td><?php if ($row['tattend2'] == 0) { echo "N/A"; } else{ echo date("G:i", $row['tattend2']);} ?></td>
                               <td><?php echo $row['registrar']; ?></td>
                             </tr>
                             <?php
@@ -204,7 +204,7 @@ href="assets/node_modules/datatables.net-bs4/css/responsive.dataTables.min.css">
                         }
                         ?>
                       </tbody>
-                     
+
               </table>
             </div>
           </div>

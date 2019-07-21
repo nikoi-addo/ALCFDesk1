@@ -65,7 +65,7 @@
                 <!-- ============================================================== -->
                 <!-- End Logo -->
                 <!-- ============================================================== -->
-                
+
             </nav>
         </header>
         <!-- ============================================================== -->
@@ -150,6 +150,7 @@
                                                 <th>Info about program?</th>
                                                 <th>Expectations</th>
                                                 <th>Friday</th>
+                                                <th>Time</th>
                                                 <th>Registrar</th>
                                             </tr>
                                         </thead>
@@ -194,6 +195,7 @@
                                                   <?php if ($row['expectations'] == "") { $expectations = "N/A";} elseif(!empty($row['expectations'])) {$expectations = $row['expectations'];} ?>
                                                   <td><?php echo $expectations; ?></td>
                                                   <td><?php echo $row['attend1']; ?></td>
+                                                  <td><?php if ($row['tattend1'] == 0) { echo "N/A"; } else{ echo date("G:i", $row['tattend1']);} ?></td>
                                                   <td><?php echo $row['registrar']; ?></td>
                                                 </tr>
                                           <?php
@@ -202,7 +204,7 @@
                                             }
                                           ?>
                                         </tbody>
-                                       
+
                                     </table>
                                 </div>
                             </div>

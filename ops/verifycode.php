@@ -26,15 +26,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $usercode = $_POST['usercode'];
     $source = $_POST['source'];
     $concusercode = substr("$usercode", 5);
+    $cur_time = time();
 
     if ($source == "cat1") {
-      $sql_regupdate = "UPDATE eventregistration SET attend1 = 'yes' WHERE id = $concusercode";
+      $sql_regupdate = "UPDATE eventregistration SET attend1 = 'yes', tattend1 = $cur_time WHERE id = $concusercode";
     }
     else if($source == "cat2"){
-      $sql_regupdate = "UPDATE eventregistration SET attend2 = 'yes' WHERE id = $concusercode";
+      $sql_regupdate = "UPDATE eventregistration SET attend2 = 'yes' tattend2 = $cur_time WHERE id = $concusercode";
     }
     else if($source == "cat3"){
-      $sql_regupdate = "UPDATE eventregistration SET attend3 = 'yes' WHERE id = $concusercode";
+      $sql_regupdate = "UPDATE eventregistration SET attend3 = 'yes' tattend3 = $cur_time WHERE id = $concusercode";
     }
     $success_regupdate = mysqli_query($link, $sql_regupdate);
     if ($success_regupdate) {
