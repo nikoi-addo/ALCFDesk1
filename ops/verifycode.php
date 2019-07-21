@@ -5,14 +5,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   //To check is usercode exists
   if (isset($_POST['codecheck'])) {
     $usercode = $_POST['usercode'];
-    $concusercode = substr("$usercode", 5);
-    $sql_codeverify = "SELECT * FROM eventregistration WHERE id = $concusercode";
-    $success_codeverify = mysqli_query($link, $sql_codeverify);
-    if ($success_codeverify->num_rows > 0) {
-      header("location:../alccodecheck2.php?uc=".$usercode);
+    if(stristr($usercode, "ALC00")){
+      $concusercode = substr("$usercode", 5);
+      $sql_codeverify = "SELECT * FROM eventregistration WHERE id = $concusercode";
+      $success_codeverify = mysqli_query($link, $sql_codeverify);
+      if ($success_codeverify->num_rows > 0) {
+        header("location:../alccodecheck2.php?uc=".$usercode);
+      }
+      else {
+        header("location:../alccodecheck1.php?fail");
+      }
     }
     else {
-      header("location:../alccodecheck1.php?fail");
+        header("location:../alccodecheck1.php?fail");
     }
   }
 
