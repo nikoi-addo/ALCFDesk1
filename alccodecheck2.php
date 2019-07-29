@@ -38,7 +38,7 @@
     <!-- ============================================================== -->
     <section id="wrapper" class="step-register">
         <div class="register-box">
-                <a href="javascript:void(0)" class="text-center m-b-40"><img src="assets/images/logo-icon.png" alt="Home" /><br/><img src="assets/images/logo-text.png" alt="Home" /></a>
+                <a href="javascript:void(0)" class="text-center m-b-40"><img src="assets/images/logo-icon.png" alt="Home" /><br/></a>
                 <!-- multistep form -->
                 <form id="msform" action="ops/verifycode.php" method="post">
                     <ul id="eliteregister">

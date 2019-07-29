@@ -40,7 +40,7 @@
        <div class="login-box card">
            <br> <br> <br> <br> <br> <br> <br> <br>  <div class="card-body">
                 <form class="form-horizontal form-material text-center" id="loginform" action="ops/userlogin.php" method="post">
-                    <a href="javascript:void(0)" class="db"><img src="assets/images/logo-icon.png" alt="Home" /><br/><img src="assets/images/logo-text.png" alt="Home" /></a>
+                    <a href="javascript:void(0)" class="db"><br/></a>
                     <div class="form-group m-t-40">
                         <?php
                           if (isset($_GET['ufail'])) {
