@@ -59,6 +59,16 @@
                           <div class="col-md-6">
                             <button type="submit" id="vsubmit" class="btn btn-info btn-block" style="color:white;" name="codecheck">Verify</button>
                           </div>
+
+                        </div>
+                        <br>
+                        <div class="row">
+                          <div class="col-md-3">
+                          </div>
+                          <div class="col-md-6">
+                            <button type="submit" id="vsubmit" class="btn btn-danger btn-block" style="color:white;" name="codecheck">Forgotten ALC Code ?</button>
+                          </div>
+
                         </div>
                     </fieldset>
 
