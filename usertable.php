@@ -91,6 +91,7 @@
                                 <li><a href="usertablesat.php">Saturday Table</a></li>
                                 <li><a href="usertablesun.php">Sunday Table</a></li>
                                 <li><a href="usertable.php">User Tables <b>All Users</a></li>
+                                <li><a href="alccodecheck1.php">Code Check</a></li> 
                                 <li><br></li>
                                 <li><a href="logout.php"><b>LOG OUT</a></li>
                             </ul>
