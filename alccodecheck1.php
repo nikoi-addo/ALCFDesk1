@@ -67,7 +67,7 @@
                           <div class="col-md-3">
                           </div>
                           <div class="col-md-6">
-                            <a href="index.php" class="btn btn-danger btn-block" style="color:white;" name="codecheck">Forgotten ALC Code ?</a>
+                            <a href="table-data.php" class="btn btn-danger btn-block" style="color:white;" name="codecheck">Forgotten ALC Code ?</a>
                           </div>
 
                         </div>
