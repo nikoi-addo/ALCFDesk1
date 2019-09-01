@@ -142,7 +142,7 @@
                                             <tr>
                                                 <td><?php echo $row['fname'] . " " . $row['lname']; ?></td>
                                                 <td>ALC00<?php echo $row['id']; ?></td>
-                                                <td>Click <a href="alccodecheck2.php?uc=ALC00<?php echo $row['id']?>">here</a> to verify</td>
+                                                <td><a href="alccodecheck2.php?uc=ALC00<?php echo $row['id']?>">Verify</a></td>
                                             </tr>
                                         <?php
                                             }
