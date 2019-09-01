@@ -1,3 +1,4 @@
+
 <?php
   session_start();
   if (isset($_SESSION['uname']) && $_SESSION['loggedin'] == true) {
@@ -66,7 +67,7 @@
                           <div class="col-md-3">
                           </div>
                           <div class="col-md-6">
-                            <button type="submit" id="vsubmit" class="btn btn-danger btn-block" style="color:white;" name="codecheck">Forgotten ALC Code ?</button>
+                            <a href="index.php" class="btn btn-danger btn-block" style="color:white;" name="codecheck">Forgotten ALC Code ?</a>
                           </div>
 
                         </div>
