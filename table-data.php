@@ -62,10 +62,7 @@
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text --><span class="hidden-sm-down">
-                            <!-- dark Logo text -->
-                            <img src="assets/images/logo-text.png" alt="homepage" class="dark-logo" />
-                            <!-- Light Logo text -->
-                            <img src="assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span>
+                           
                     </a>
                 </div>
                 <!-- ============================================================== -->
@@ -74,10 +71,9 @@
 
             </nav>
         </header>
-        <!-- ============================================================== -->
-        <!-- End Topbar header -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
+       
+
+       
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
         <div class="page-wrapper">
@@ -90,7 +86,7 @@
                 <!-- ============================================================== -->
                 <div class="row page-titles">
                     <div class="col-md-5 align-self-center">
-                        <h4 class="text-themecolor">Datatable</h4>
+                        <h4 class="text-themecolor">Abundant Life Conference 2019 -- The Temple Of Charis</h4>
                     </div>
                     <!-- <div class="col-md-7 align-self-center text-right">
                         <div class="d-flex justify-content-end align-items-center">
@@ -115,8 +111,8 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Data Export</h4>
-                                <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>
+                                <h4 class="card-title">ALC Code Verification</h4>
+                                <h6 class="card-subtitle">Check if person has already Registered for the ALC 2019.</h6>
                                 <div class="table-responsive m-t-40">
                                     <table id="example23"
                                         class="display nowrap table table-hover table-striped table-bordered"
@@ -126,6 +122,8 @@
                                                 <th>Name</th>
                                                 <th>Regsitration Code</th>
                                                 <th>Verify</th>
+                                                <th>Phone Number</th>
+                                                <th>Email</th>
                                             </t
                                                 r>
                                         </thead>
@@ -143,6 +141,8 @@
                                                 <td><?php echo $row['fname'] . " " . $row['lname']; ?></td>
                                                 <td>ALC00<?php echo $row['id']; ?></td>
                                                 <td><a href="alccodecheck2.php?uc=ALC00<?php echo $row['id']?>">Verify</a></td>
+                                                <td><?php echo $row['phone']; ?></td>
+                                                 <td><?php echo $row['email']; ?></td>
                                             </tr>
                                         <?php
                                             }
@@ -252,7 +252,7 @@
         <!-- footer -->
         <!-- ============================================================== -->
         <footer class="footer">
-            © 2019 Eliteadmin by themedesigner.in
+            © 2019 TTOC Techinal Team
         </footer>
         <!-- ============================================================== -->
         <!-- End footer -->
