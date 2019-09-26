@@ -1,0 +1,406 @@
+insert into `eventregistration`(`fname`,`lname`,`email`,`phone`,`lo'0','0','0','cation`,`dob`,`attend1`,`attend2`,`attend3`,`tattend1`,`tattend2`,`tattend3`,`source`,`expectations`,`registrar`) values 
+
+
+('Miss Vanessa','Asamoah','vasamoah62@gmail.com','0548490559','Airport','N/A','no','no','no','0','0','0','cat1','Glorious','Minister Sophia'),
+
+('Miss Daniella','Larsen','daniellaednalarsen@gmail.com','0544042197','Spintex','N/A','no','no','no','0','0','0','cat1','Blessed by the word!!!','Minister Sophia'),
+
+('Miss Elaine','Akoto','elaineakoto@gmail.com','0261493848','Spintex','N/A','no','no','no','0','0','0','cat1','Glorious','Minister Sophia'),
+
+('Miss Sophia','Acquaye','sophiaakyereacquaye@gmail.com','0500002082','Adenta Frafraha','N/A','no','no','no','0','0','0','cat1','To experience the power of the Holy Spirit in another dimension. To receive a deeper knowledge and understanding of the Word of God. To see many souls won to Christ','Minister Sophia'),
+
+('Miss Jessica','Manyo','jessicamawuena@gmail.com','0205841918','Acp Pokuase','N/A','no','no','no','0','0','0','cat1','Spirit filled conference which will bring transformation in every aspect of our lives','Minister Sophia'),
+
+('Mr Prince','Frimpong','kwame60.pf@gmail.com','0555926251','Korle Bu','N/A','no','no','no','0','0','0','cat1','Increase in Grace and in the knowledge of our Lord Jesus Christ','Minister Sophia'),
+
+('Miss Darlene','Lamptey','darlenemlamptey@gmail.com','0271832712','Osu','N/A','no','no','no','0','0','0','cat1','To receive more from my man of God and move to a higher level of Knowledge in the word of God and glory!','Minister Sophia'),
+
+('Miss Jennifer','Manyo','jenyamour.ja@gmail.com','0504127326','ACP Pokuase','N/A','no','no','no','0','0','0','cat1','A Glorious service','Minister Sophia'),
+
+('Mr Rudy Nikoi','Addo','rudyaddo@gmail.com','0209032581','East Legon','N/A','no','no','no','0','0','0','cat1','Increase in knowledge of the Abundance of life I have in Christ. Many people being saved and Divine Healing','Minister Sophia'),
+ 
+('Miss Michelle','Dzifa','akosuadzf@gmail.com','0208996932','University of Ghana','N/A','no','no','no','0','0','0','cat1','To be spiritually strengthened.','Minister Sophia'),
+
+('Mr Sedem','Apau','sedemapau22@gmail.com','0540664630','Laterbiokorshie','N/A','no','no','no','0','0','0','cat1','Glorious','Minister Sophia'),
+
+('Mr Daniel','Owusu-Koranteng','danowusukoranteng@gmail.com','0200998099','Tema','N/A','no','no','no','0','0','0','cat1','To experience the Holy Spirit in another dimension, and to be filled with the knowledge of the abundant life that we’ve been given','Minister Sophia'),
+
+('Mr James','Amenti','Jamenti57@gmail.com','0543061675','McCarthy Hill','N/A','no','no','no','0','0','0','cat1','To experience the abundance life of Christ through this program.','Minister Sophia'),
+
+('Miss Sarah Kelly Shidaa','Addy','kellyshidaaa@gmail.com','0273238553','Alajo','N/A','no','no','no','0','0','0','cat1','Glorious and awesome in his presence and experience him','Minister Sophia'),
+
+('Miss Deborah','Oddoye','dherbie.Oddoye97@gmail.com','0277517297','Tema','N/A','no','no','no','0','0','0','cat1','That God will be glorified','Minister Sophia'),
+
+('Mr Daniel','Kwadwo Sarfo','danielsarfo808@gmail.com','0203868095','Legon','N/A','no','no','no','0','0','0','cat1',' I expect to receive from the Lord to help know him more','Minister Sophia'),
+
+('Mr Mark','Dogbey','marktruth9@gmail.com','0243442819','Sowutuom','N/A','no','no','no','0','0','0','cat1','EXPECTING A GLORIOUS AND MIGHTY MOVE OF GOD','Minister Sophia'),
+
+('Miss Edem','Tetteh','edemtetteh82@gmail.com','0542554606','Accra NewTown','N/A','no','no','no','0','0','0','cat1','Glorious encounters for everyone. Also to learn what God has or will give the man of God.','Minister Sophia'),
+
+('Mr Dzidefo','Dotse','boudingh@gmail.com','0267521428','Lakeside','N/A','no','no','no','0','0','0','cat1','Upliftment','Minister Sophia'),
+
+('Mr Gilbert Senior','Agyiri-Tete','gilbertsenior77@gmail.com','0270248777','Spintex','N/A','no','no','no','0','0','0','cat1','It’s going to be a glorious time of the word and power','Minister Sophia'),
+
+('Mr Conrad','Dahlin','dahlinconrad@gmail.com','0244138907','Eastern Region','N/A','no','no','no','0','0','0','cat1','Wonderful and blissful','Minister Sophia'),
+
+('Mr Klinsman','Boateng','kboatengking03@gmail.com','0551987429','University of Ghana','N/A','no','no','no','0','0','0','cat1','A lifting up in the spirit','Minister Sophia'),
+
+('Mr Bernard','Osei Akoto','Bernardoseiakoto.boa@gmail.com','0571356806','Ablekuma','N/A','no','no','no','0','0','0','cat1','It will be a Glorious program','Minister Sophia'),
+
+('Miss Gertrude','Agyapong','agertrude9@gmail.com','0505503017','East Legon','N/A','no','no','no','0','0','0','cat1','Miracles healing','Minister Sophia'),
+
+('Miss Rosabel','Tetteh','rosatetteh@gmail.com','0244675087','Afienya','N/A','no','no','no','0','0','0','cat1','To experience the embrace of the Holy Spirit through deeper understanding of the Word of God','Minister Sophia'),
+
+('Mr Emmanuel','Koduah','kdhemmanuel@gmail.com','0553553903','Teshie Tsuibleo','N/A','no','no','no','0','0','0','cat1','Transformation of life','Minister Sophia'),
+
+('Mr Alex','Ofosu Kwakye','aofosu.gh@gmail.com','0265263836','Red Top','N/A','no','no','no','0','0','0','cat1','That the program will be life transforming','Minister Sophia'),
+
+('Mr Fritz','Baffoe','Bbondzie13@gmail.com','0269901135','Adenta','N/A','no','no','no','0','0','0','cat1','Insight','Minister Sophia'),
+
+('Mr Samuel Micheal','Cudjoe','samuelcudjoe536@gmail.com','0543637453','Accra','N/A','no','no','no','0','0','0','cat1','Nothing but the Good word of God to transform my Life for the better.','Minister Sophia'),
+
+('Miss Yolanda','Dotse- Mensah','yolimensah@gmail.com','0245443987','Kasoa','N/A','no','no','no','0','0','0','cat1','Welcoming atmosphere to worship','Minister Sophia'),
+
+('Mr Julian','Hinson','Jayfhinson@gmail.com','0249012305','Adentan','N/A','no','no','no','0','0','0','cat1','The abundant life of God will be evident in everyone that attends this programme and whoever comes into contact will experience the abundant life and the love of God.','Minister Sophia'),
+
+('Mr Alfred','Otchere','alfredotchere@gmail.com','0207530317','Odorkor','N/A','no','no','no','0','0','0','cat1','Increase in the love and knowledge of God and a deeper relationship with the Holy Spirit','Minister Sophia'),
+
+('Mr Albert','Zoddah','azoddah@gmail.com','0275595902','Tema','N/A','no','no','no','0','0','0','cat1','A lot of everything','Minister Sophia'),
+
+('Mr Joshua','Nketsiah','Nketsiahjoshua7@gmail.com','0268083164','Dansoman','N/A','no','no','no','0','0','0','cat1','Preaching of the  unadulterated word of God accompanied by the power of God in the demonstration of healings miracles and prophecies.','Minister Sophia'),
+
+('Miss Diana','Luu','dyluu@st.ug.edu.gh','0204804479','Obuasi','N/A','no','no','no','0','0','0','cat1','To receive a deeper understanding of the Word','Minister Sophia'),
+
+('Miss Perpetual','Adjei','nanagyamfua.pa@gmail.com','0545886969','East Legon','N/A','no','no','no','0','0','0','cat1','I believe that with this programme people’s understanding of the word will be enlightened and they would affect their sphere of contact with what they receive.','Minister Sophia'),
+
+('Miss Dorcas','Nketsiah','dnketsiah2@gmail.com','0543735054','Dansoman','N/A','no','no','no','0','0','0','cat1','A life changing experience','Minister Sophia'),
+
+('Miss Beatrice','Tetteh','Akweleytetteh433@gmail.com','0249375793','Dodowa','N/A','no','no','no','0','0','0','cat1','REVIVAL AND BREAKTHROUGHS','Minister Sophia'),
+
+('Mr Samuel','Asamoah-Boateng','asamoahboatengsam@gmail.com','0552537387','Sakumono','N/A','no','no','no','0','0','0','cat1','To experience a deeper understanding of what it means to be in Christ','Minister Sophia'),
+
+('Mr Josaiah','Acheampong Marfo','acheampongjosaiah999@gmail.com','0550044110','Lapaz- Accra','N/A','no','no','no','0','0','0','cat1','Supernatural increase and Recreation','Minister Sophia'),
+
+('Miss Lois Ewuraesi','Osei','ewuraesi4554@gmail.com','0272222141','Kasoa','N/A','no','no','no','0','0','0','cat1','To fellowship with the body of Christ.','Minister Sophia'),
+
+('Mr Frederick','Tettey','kofigyampo1994@gmail.com','0542066707','Mataheko','N/A','no','no','no','0','0','0','cat1','The radiation of God's glory','Minister Sophia'),
+
+('Miss Ama','Hayfron','Hayfronnanaama@yahoo.com','502490587','Koforidua','N/A','no','no','no','0','0','0','cat1','Be more blessed after the event','Minister Sophia'),
+
+('Miss Priscilla','Frimpong','frimpongp22@gmail.com','5083300564','Worcester MA','N/A','no','no','no','0','0','0','cat1','A day filled with glory and God power','Minister Sophia'),
+
+('Mr Joseph Derek','Tetteh','derekjoseph1989@gmail.com','0546265468','Redtop, Bortianor - Weija','N/A','no','no','no','0','0','0','cat1','Expectations are to experience the manifestation of the Holy Spirit to usher us into more glorious things ahead of us.','Minister Sophia'),
+
+('Miss Rachael','Suntah','suntahr@gmail.com','0575176958','Western Reg','N/A','no','no','no','0','0','0','cat1','Manifestation of God's glory','Minister Sophia'),
+
+('Mr Eugene','Adjei','Kofiadjei16@gmail.com','0501148431','Tema','N/A','no','no','no','0','0','0','cat1','A Glorious Life time experience. A new level of my walk with the holy spirit','Minister Sophia'),
+
+('Mr Emmanuel','Evans-Anfom','niiarmah5@gmail.com','0243221612','Achimota','N/A','no','no','no','0','0','0','cat1','e with the Word of God, full of the demonstration of the Spirit and Impartations.','Minister Sophia'),
+
+('Miss Nana Yaa Ansomaa','Enyan','Neyabaabe@gmail.com','0559598368','Dansoman','N/A','no','no','no','0','0','0','cat1','An overflow of Gods glory on everyone','Minister Sophia'),
+
+('Mr Kelvin','Tey','Kenwynwejones@gmail.com','0571038248','Abelenkpe','N/A','no','no','no','0','0','0','cat1','A life changing experience','Minister Sophia'),
+
+('Mr John','Quampah','jquampah@gmail.com','0505698644','Onyinase','N/A','no','no','no','0','0','0','cat1','I'm expecting glorious things','Minister Sophia'),
+
+('Miss Esther','Adom-Miah','estaadom@gmail.com','0559897519','Oyarifa','N/A','no','no','no','0','0','0','cat1','The righteousness of God will be revealed to everyone','Minister Sophia'),
+
+('Miss Elida','Akomeah Boateng','Elydaboateng@gmail.com','0205626433','Sapeiman','N/A','no','no','no','0','0','0','cat1','To increase in the Word and increase in my relationship with the Holy Spirit','Minister Sophia'),
+
+('Mr Fred','Darko','fredkdarko@gmail.com','0203258234','DOME PILLAR 2','N/A','no','no','no','0','0','0','cat1','EYES BEING ENLIGHTENED ABOUT THE ABUNDANT LIFE GOD HAS GIVEN US','Minister Sophia'),
+
+('Miss Priscilla','Adom-Miah','prillaardhom@gmail.com','0209061374','Oyarifa','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Andrew','Nyame','andytsidek@gmail.com','0500201029','Spintex','N/A','no','no','no','0','0','0','cat1','Blessed by the word','Minister Sophia'),
+
+('Miss Freda','Basoah','fredabasoah@gmail.com','0200080032','East Legon','N/A','no','no','no','0','0','0','cat1','Blessed by the word','Minister Sophia'),
+
+('Miss Samantha','Amedume','syamedume97@gmail.com','0200772033','Madina Firestone','N/A','no','no','no','0','0','0','cat1','Blessed by the word','Minister Sophia'),
+
+('Miss Sandra','Quarcoo','mandzu450@gmail.com','0559585341','East Legon','N/A','no','no','no','0','0','0','cat1','Transformation of life','Minister Sophia'),
+
+('Mr Frederick','Akpabey','frederickdeladem@gmail.com','0557078436','Dodowa','N/A','no','no','no','0','0','0','cat1','Transformation of life','Minister Sophia'),
+
+('Miss Jennifer','Gyasi','jennykyei5@gmail.com','0205765082','Dansoman','N/A','no','no','no','0','0','0','cat1','Transformation of life','Minister Sophia'),
+
+('Mr Samuel','Quaye','samikon18@gmail.com','0277450104','Darkuman','N/A','no','no','no','0','0','0','cat1','Transformation of life','Minister Sophia'),
+
+('Miss Siba','Adibo','afuaadibo@gmail.com','0560604079','Ashongman','N/A','no','no','no','0','0','0','cat1','Power packed Conference','Minister Sophia'),
+
+('Miss Esther','Dodoo','estiedo3@gmail.com','0508702502','Dansomam','N/A','no','no','no','0','0','0','cat1','Power packed Conference','Minister Sophia'),
+
+('Miss Anita','Hansen','ecocoatltd@gmail.com','0554806255','Dansoman','N/A','no','no','no','0','0','0','cat1','Power packed Conference','Minister Sophia'),
+
+('Miss Louisa','Eyisah','louisaeyisah@gmail.com','0545220336','Sakumono Accra','N/A','no','no','no','0','0','0','cat1','Revelation of God's purpose for my life','Minister Sophia'),
+
+('Mrs Dora','Baxter','chrisbopam@gmail.com','0249012305','Adenta','N/A','no','no','no','0','0','0','cat1','Revelation of God's purpose for my life','Minister Sophia'),
+
+('Miss Cindy','Anane','cinane97@gmail.com','0205841918','Korle Bu','N/A','no','no','no','0','0','0','cat1','Revelation of God's purpose for my life','Minister Sophia'),
+
+('Mr Ephraim','Kanda','ephraimkanda99@gmail.com','0266855395','Teshie Nungua','N/A','no','no','no','0','0','0','cat1','Increment in Grace and Glory','Minister Sophia'),
+
+('Mr Kirk','Caesar','kirkcaes@gmail.com','0541824022','Tema','N/A','no','no','no','0','0','0','cat1','Increment in Grace and Glory','Minister Sophia'),
+
+('Miss Nadia','Yeboah','nyeboah@y7mail.com','0573447615','Accra','N/A','no','no','no','0','0','0','cat1','Increment in Grace and Glory','Minister Sophia'),
+
+('Mr Michael','Kumah','michealkumah18@gmail.com','0278937337','Accra','N/A','no','no','no','0','0','0','cat1','Increment in Grace and Glory','Minister Sophia'),
+
+('Miss Vanessa','James','nessaefua@gmail.com','0272903268','Korle Bu','N/A','no','no','no','0','0','0','cat1','Increment in Grace and Glory','Minister Sophia'),
+
+('Mr Benjamin','Baidoo','baidooben70@gmail.com','0270113278','Ablekuma','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Miss Sophia','Acheampong','sophie.achie@gmail.com','0505503017','Sakumono ','N/A','no','no','no','0','0','0','cat1','A renewal of mind and accuracy in living through the word.','Minister Sophia'),
+
+('Miss Dorcas','Quaye','dorcasquaye123@gmail.com','0552927982','Ashaiman','N/A','no','no','no','0','0','0','cat1','A renewal of mind and accuracy in living through the word.','Minister Sophia'),
+
+('Miss Kelvia','Amfo-Boakye','kelviaamfo2@gmail.com','0554199621','Ho','N/A','no','no','no','0','0','0','cat1','A renewal of mind and accuracy in living through the word.','Minister Sophia'),
+
+('Miss Nana Akua','Nsiah','ewuraakuansiah1@gmail.com','0205833066','Accra','N/A','no','no','no','0','0','0','cat1','A renewal of mind and accuracy in living through the word.','Minister Sophia'),
+
+('Miss Lydia','Eshun','lydiaeshun28@yahoo.com','0205822737','Labadi ','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Roy','King','roy.king.78.rk@gmail.com','0278055076','Legon','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr David','Addo','addo9699@gmail.com','0273260540,'Odorkor','N/A','no','no','no','0','0','0','cat1','Spirit Filled encounter','Minister Sophia'),
+
+('Mr Kingsley','Essel Arthur','kofiessel35@gmail.com','0572868186','Ashley Botwe','N/A','no','no','no','0','0','0','cat1','Spirit Filled encounter','Minister Sophia'),
+
+('Miss Akosua','Adusei','adjubiadu@gmail.com','0542734546','Darkuman ','N/A','no','no','no','0','0','0','cat1','Spirit Filled encounter','Minister Sophia'),
+
+('Miss Marian Zoe','Adong-Yure','mzyure16@gmail.com','0209989389','Taifa','N/A','no','no','no','0','0','0','cat1','Spirit Filled encounter','Minister Sophia'),
+
+('Mr Benjamin','Addo-Dankwa','nadankwa@gmail.com','0207460793','Accra ','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Richard','Teye Mensah','rtmensah8844@gmail.com','0541884475','Nyaniba Estate','N/A','no','no','no','0','0','0','cat1','Spiritual Life transformation','Minister Sophia'),
+
+('Miss Precious','Engmann','survivalsefeli@gmail.com','0268314987','Accra','N/A','no','no','no','0','0','0','cat1','Spiritual Life transformation','Minister Sophia'),
+
+('Mr Ebenezer','Asare','nezer159@gmail.com','0243764136','Accra','N/A','no','no','no','0','0','0','cat1','Spiritual Life transformation','Minister Sophia'),
+
+('Miss Jemima','Mante','jemmymante@gmail.com','0542936247','Adenta','N/A','no','no','no','0','0','0','cat1','Spiritual Life transformation','Minister Sophia'),
+
+('Miss Asantewaa','Frempong-Boahene','rita_boahene@icloud.com','0209019552','Dansoman','N/A','no','no','no','0','0','0','cat1','Spiritual Life transformation','Minister Sophia'),
+
+('Mr David','Owiredu','evasupreme@gmail.com','0202943357','Nsawam','N/A','no','no','no','0','0','0','cat1','Spiritual Life transformation','Minister Sophia'),
+
+('Mr Hosni','Orlando','hosniorlando@gmail.com','0555555803','Tema- spintex','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Michael','Commodore','mrmichaelcommodore@gmail.com','0246482921','Kokomlemle','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Gideon','Worlasi','gideonavornyo2@gmail.com','0544764814','Tema Community 5','N/A','no','no','no','0','0','0','cat1','Looking forward to get deeper understanding of the word of God','Minister Sophia'),
+
+('Mr Leonard','Ahia','leomclloyd77@gmail.com','0248163963','Parakuo Estate','N/A','no','no','no','0','0','0','cat1','Looking forward to get deeper understanding of the word of God','Minister Sophia'),
+
+('Miss Barbara','Datiakwa','barbaradatiakwa123@gmail.com','0209454216','Accra','N/A','no','no','no','0','0','0','cat1','Looking forward to get deeper understanding of the word of God','Minister Sophia'),
+
+('Mr Kobby','Oppong-Williams','kobbywilliams64@gmail.com','0542953882','Adenta','N/A','no','no','no','0','0','0','cat1','Looking forward to get deeper understanding of the word of God','Minister Sophia'),
+
+('Mr Paul','Aka Tofey','pablotoffey1@gmail.com','0557188326','Ofankor Barrier','N/A','no','no','no','0','0','0','cat1','Looking forward to get deeper understanding of the word of God','Minister Sophia'),
+
+('Mr Benjamin','Tagoe','benjaminclinton1999@gmail.com','0203462620','Korle-Bu Accra','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Miss Winifred','Asiamah','winicash1@gmail.com','0571423297','Gbawe','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Fritz','Baffoe','bbondzie@gmail.com','O269901135','Adenta','N/A','no','no','no','0','0','0','cat1','Blessings and divine manifestation from God','Minister Sophia'),
+
+('Mrs Grace','Annan','derekjoseph1989@gmail.com','0506279880','Redtop Bortianor','N/A','no','no','no','0','0','0','cat1','Blessings and divine manifestation from God','Minister Sophia'),
+
+('Mr Emmanuel','Kwame Tetteh','derekjoseph1989@gmail.com','0277421219','Redtop Bortianor','N/A','no','no','no','0','0','0','cat1','Blessings and divine manifestation from God','Minister Sophia'),
+
+('Miss Celestina','Essien','celestinaessien@gmail.com','0551884109','Legon Campus','N/A','no','no','no','0','0','0','cat1','Blessings and divine manifestation from God','Minister Sophia'),
+
+('Mr Charles','Asare','twumasiasarecharles@gmail.com','0555135607','Kasoa','N/A','no','no','no','0','0','0','cat1','Blessings and divine manifestation from God','Minister Sophia'),
+
+('Mr Kwesi Baah Korsah','Smith-Mensah','smithmensahkorsah@@yahoo.com','0262130589','Tema','N/A','no','no','no','0','0','0','cat1','Blessings and divine manifestation from God','Minister Sophia'),
+
+('Miss Bridget','Azi','drbryd01@gmail.com','0553763731','Weija-SCC','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Francis','Asiamah','francisasiamah2002@gmail.com','0507236507','Dansoman','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Benjamin','Dzeketey','benjamendarli@gmail.com','0202948046','Spintex','N/A','no','no','no','0','0','0','cat1','Glorious','Minister Sophia'),
+
+('Miss Agnes','Buxton','agnesbuxton19@gmail.com','0241116573','Abossey Okai','N/A','no','no','no','0','0','0','cat1',' To experience God's presence like never before','Minister Sophia'),
+
+('Mr Nana','Sam','chiefsammmuel@gmail.com','0541049929','Osu','N/A','no','no','no','0','0','0','cat1',' To experience God's presence like never before','Minister Sophia'),
+
+('Miss Leticia','Ankrah','leticiaankrah26@gmail.com','0548075609','Ablekumah','N/A','no','no','no','0','0','0','cat1',' To experience God's presence like never before','Minister Sophia'),
+
+('Miss Nadia','Ternor','nadiaternor99@gmail.com','0506066369','Tema','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Samuel Kwasi','Amoako','samuelkamoako69@gmail.com','0542407639','Oyarifa','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Ahornam','Agbotse','ahoryaw1@outlook.com','0575847961','Accra','N/A','no','no','no','0','0','0','cat1','Gaining insight about the life God has called us to','Minister Sophia'),
+
+('Mr Kwasi Adu Boadi','Acheampong','aduboadiacheampong@gmail.com','0501226889','Klagon','N/A','no','no','no','0','0','0','cat1','Gaining insight about the life God has called us to','Minister Sophia'),
+
+('Miss Joana','Orgle','jaaorgle@st.ug.edu.gh','0203453769','Mallam','N/A','no','no','no','0','0','0','cat1','Gaining insight about the life God has called us to','Minister Sophia'),
+
+('Mr Jude','Lartey','judelartey33@gmail.com','0577412390','Accra-Tema Community 5','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Miss Ewurasi','Wobil','awurahsy78@gmail.com','0557346577','Lashibi 17','N/A','no','no','no','0','0','0','cat1','Gaining insight about the life God has called us to','Minister Sophia'),
+
+('Mr Adrian','Ansong Omari','adiel1sparkles@gmail.com','0508045007','Achimota','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Miss Johnet','Nagba','johnetasibi@gmail.com','0547221882','Burma Camp','N/A','no','no','no','0','0','0','cat1','Gaining insight about the life God has called us to','Minister Sophia'),
+
+('Miss Ambra','Asare','asarebaffourambra3@gmail.com','0553893613','Legon Campus Pent','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Miss Akua','Baayeh','abrafibaayeh04@gmail.com','0501109087','Dansoman','N/A','no','no','no','0','0','0','cat1','Desiring to increase as the man of God enlightens us in the word','Minister Sophia'),
+
+('Mr Felix','Richter','felixnrich@gmail.com','0241718224','Tema','N/A','no','no','no','0','0','0','cat1','Desiring to increase as the man of God enlightens us in the word','Minister Sophia'),
+
+('Mr Hayford','Essoun','hayfordessoun@gmail.com','0247816835','Weija','N/A','no','no','no','0','0','0','cat1','Desiring to increase as the man of God enlightens us in the word','Minister Sophia'),
+
+('Mr Jesse','Anin','jayanin8@gmail.com','0209168967','Ofankor Barrier','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Samuel','Appiah','samoptimist100@gmail.com','0542940136','Kumasi','N/A','no','no','no','0','0','0','cat1','Desiring to increase as the man of God enlightens us in the word','Minister Sophia'),
+
+('Mrs Constance','Acheampong','queensline2000@gmail.com','0244282455','Sakumono','N/A','no','no','no','0','0','0','cat1','Desiring to increase as the man of God enlightens us in the word','Minister Sophia'),
+
+('Miss Natasha','Hammond Quarcoo','natashahammond232@gmail.com','0544367295','Accra','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Alfred','Numo','ocanseyalfred@gmail.com','0574979112','Korle Bu','N/A','no','no','no','0','0','0','cat1','Desiring to increase as the man of God enlightens us in the word','Minister Sophia'),
+
+('Mr Silas Oppong','Agyemang','silasagyemang12@gmail.com','0507291376','Dansoman or Pokuase','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Miss Nanaesi','Hinson','annaesihinson1@gmail.com','0506678822','Adentan','N/A','no','no','no','0','0','0','cat1','Abundant Knowledge and wisdom','Minister Sophia'),
+
+('Miss Nanayaa','Agyekumhene','nanayaa_a@yahoo.com','0506632704','Legon','N/A','no','no','no','0','0','0','cat1','Abundant Knowledge and wisdom','Minister Sophia'),
+
+('Mr Prince Roland','Quansah','rolandprince866@gmail.com','0547201230','Haatso','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Miss Bernice','Gyamfi','nanamagyamfi@gmail.com','0556661399','Spintex','N/A','no','no','no','0','0','0','cat1','Abundant Knowledge and wisdom','Minister Sophia'),
+
+('Miss Samira','Seidu','saemhyrrahseidu@gmail.com','0542512217','Burma Camp','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Miss Priscilla','Mac-Andoh','priscilla.mac-andoh16@wesleygirls.edu.gh','0559585181','Legon Campus','N/A','no','no','no','0','0','0','cat1','Abundant Knowledge and wisdom','Minister Sophia'),
+
+('Mr Rauf','Bitali','bitali48@gmail.com','0209045624','Kasoa Old Barrier','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Cyril','Ando Brew','cyrilandobrew2329@gmail.com','0244472329','Kokrobite','N/A','no','no','no','0','0','0','cat1','Abundant Knowledge and wisdom','Minister Sophia'),
+
+('Mr Immanuel','Adom-Miah','adomiah@gmail.com','0554291526','Oyarifa','N/A','no','no','no','0','0','0','cat1','Abundant Knowledge and wisdom','Minister Sophia'),
+
+('Mr Benny','Samuel','bsam53776@gmail.com','0547760068','Kasoa','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Gilbert','Crotti','gcrotti.ca@gmail.com','0244105610','Taifa','N/A','no','no','no','0','0','0','cat1','Abundant Knowledge and wisdom','Minister Sophia'),
+
+('Mr Deku','Blankson','dekublankson@gmail.com','0549506918','Korle Bu Nursing Training School','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr King Abbey Emmanuel','Alo','eabiodunalo@yahoo.com@gmail.com','0542419682','Spintex','N/A','no','no','no','0','0','0','cat1','A life-changing fellowship with the Holy Spirit and believers of the gospel.','Minister Sophia'),
+
+('Mr Obed','Adom-Miah','adommiahobed@gmail.com','0507292771','University of Ghana','N/A','no','no','no','0','0','0','cat1','A life-changing fellowship with the Holy Spirit and believers of the gospel.','Minister Sophia'),
+
+('Mr Gilbert','Agyiri-Tete Jnr','gilbertagyiri22@gmail.com','0571302939','Spintex','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Nana','Yaw','nnayawee@gmail.com','0200312719','Tema','N/A','no','no','no','0','0','0','cat1','A life-changing fellowship with the Holy Spirit and believers of the gospel.','Minister Sophia'),
+
+('Miss Hilda','Eshun','hoeshun@st.ug.edu.gh','0555183127','University of Ghana','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Todd','Donkor','todddonkor20@gmail.com','0572952324','Achimota','N/A','no','no','no','0','0','0','cat1','A life-changing fellowship with the Holy Spirit and believers of the gospel.','Minister Sophia'),
+
+('Mr Albert Fiifi','Adjei','albertadjei92@gmail.com','0209130679','Ofankor','N/A','no','no','no','0','0','0','cat1','A life-changing fellowship with the Holy Spirit and believers of the gospel.','Minister Sophia'),
+
+('Miss Adelaide','Odei','adelaideodei103@gmail.com','0266185102','Legon','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Daniel','Nyame','dannyalves496@gmail.com','0501183798','Spintex','N/A','no','no','no','0','0','0','cat1','That the glory of God will be revealed and lives will be transformed.','Minister Sophia'),
+
+('Mr Francis','Anaisie','nakson2019@gmail.com','0241697604','Mamprobi','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Miss Lordina','Koranteng','lkoranteng45@gmail.com','0570330498','Spintex','N/A','no','no','no','0','0','0','cat1','That the glory of God will be revealed and lives will be transformed.','Minister Sophia'),
+
+('Mr Fuhad','Mahamuda','fuhadmamuda@gmail.com','0508969618','Osu','N/A','no','no','no','0','0','0','cat1','That the glory of God will be revealed and lives will be transformed.','Minister Sophia'),
+
+('Mr Alex','Frempong','jaysuccess4@gmail.com','0508555037','Legon','N/A','no','no','no','0','0','0','cat1','That the glory of God will be revealed and lives will be transformed.','Minister Sophia'),
+
+('Mr Kweku Acheampong','Boakye','kwekuboakye791@gmail.com','0540849757','Legon','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr F.O','Frimpong','fabyjnr@gmail.com','0205372842','Madina','N/A','no','no','no','0','0','0','cat1','That the glory of God will be revealed and lives will be transformed.','Minister Sophia'),
+
+('Mr Francis','Akorli','itzeccentric@gmail.com','0561404331','Ashaiman ','N/A','no','no','no','0','0','0','cat1','That the glory of God will be revealed and lives will be transformed.','Minister Sophia'),
+
+('Miss Eunice','Yeboah','yeboheunice171@gmail.com','0505880516','Rawlings Circle','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Samuel','Nti Nkrumah','Kojonti12@gmail.com','0576147383','Kwapong Hall','N/A','no','no','no','0','0','0','cat1','That the glory of God will be revealed and lives will be transformed.','Minister Sophia'),
+
+('Mr David','Sedzi','sedzidavid@gmail.com','0557393716','Nsawam','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Daniel','Larsen','danieledwardlarsen@gmail.com','0245414846','Spintex','N/A','no','no','no','0','0','0','cat1','I’m going to have a life changing encounter with God ','Minister Sophia'),
+
+('Mrs Naa Koshie','Larsen','naakoshielarsen0@gmail.com','0244269686','Spintex','N/A','no','no','no','0','0','0','cat1','I’m going to have a life changing encounter with God ','Minister Sophia'),
+
+('Mr Kelvin','Larbi','kelvinjoydav@gmail.com','0232912682','Suncity','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','MiI'm expecting the presence and influence of the Holy Spirit to be so great.nister Sophia'),
+
+('Miss Serwah','Asare-Twerefour','masaat25@gmail.com','0268299636','Legon','N/A','no','no','no','0','0','0','cat1','I’m going to have a life changing encounter with God ','Minister Sophia'),
+
+('Miss Sharon','Danso','sharonedanso@gmail.com','0205001239','Dansoman','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Bernard','Akwatia','akwatiabernard@gmail.com','0265967075','Legon','N/A','no','no','no','0','0','0','cat1','I'm expecting the presence and influence of the Holy Spirit to be so great.','Minister Sophia'),
+
+('Miss Marlynn','Isliker','marlynnisliker@gmail.com','0261101947','University of Ghana','N/A','no','no','no','0','0','0','cat1','I'm expecting the presence and influence of the Holy Spirit to be so great.','Minister Sophia'),
+
+('Miss Ruth','Dodoo','naabiruth@gmail.com','0547015503','Mamprobi - Agege','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr David Yaw','Asamoah','odavido28@gmail.com','0209048640','Tema','N/A','no','no','no','0','0','0','cat1','I'm expecting the presence and influence of the Holy Spirit to be so great.','Minister Sophia'),
+
+('Mr Benjamin','Rockson','rockda4th@gmail.com','0578644297','Lartebiokorshie','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Miss Brenda','Kissi-Dankwa','brendakd@gmail.com','0540721341','Taifa','N/A','no','no','no','0','0','0','cat1','I'm expecting the presence and influence of the Holy Spirit to be so great.,'Minister Sophia'),
+
+('Mr Samuel','Marfo','oheneyaw.ss@gmail.com','0544044011','Dansoman','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Kelvin','Madukwe-Gyamerah','kelvin.gyamerah@yahoo.com','0203869730','Mataheko','N/A','no','no','no','0','0','0','cat1','I'm expecting the presence and influence of the Holy Spirit to be so great.','Minister Sophia'),
+
+('Mr Joshua','Addo','jaddo009@st.ug.edu.gh','0547189081','Legon Campus','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Godfred','Antwi','Godfredantwi103@gmail.com','0203622777','Adabraka','N/A','no','no','no','0','0','0','cat1','I'm expecting the presence and influence of the Holy Spirit to be so great.','Minister Sophia'),
+
+('Mr Andrews','Osei Bonsu','andrewbonsu16@gmail.com','0264310035','Legon Campus','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Yaw','Agyapong Darko','ydarko103@gmail.com','0545170172','Agbogba','N/A','no','no','no','0','0','0','cat1','To be imparted with the WORD.','Minister Sophia'),
+
+('Mr Frederick','Kyereh','fkyereh001@st.ug.edu.gh','0547605763','Legon Campus','N/A','no','no','no','0','0','0','cat1','To be imparted with the WORD.','Minister Sophia'),
+
+('Mr Derick','Adom Amo','amoadomderick00@gmail.com','0267426786','Legon Campus','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Joseph','Botchway','governor.stat98@gmail.com','0262307740','Legon Campus','N/A','no','no','no','0','0','0','cat1','To be imparted with the WORD.','Minister Sophia'),
+
+('Mr Emmanuel','Kwaku Ntumi ','emmanuelk.ntumi@gmail.com','0572460421','Ashaley Botwe','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Simon','Abbam	Berchie','profabbam10@gmail.com','0206651094','Legon Campus','N/A','no','no','no','0','0','0','cat1','To be imparted with the WORD.','Minister Sophia'),
+
+('Miss Yvonne','Kyeremaa Peprah','ypkeremaa@gmail.com','0546231535','Legon Campus','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Miss Priscilla','Atiemo','atiemopriscilla00@gmail.com','0545507820','Legon Campus','N/A','no','no','no','0','0','0','cat1','To be imparted with the WORD.','Minister Sophia'),
+
+('Miss Sandra','Frimpong','iamjesmirac@gmail.com','0506384450','Legon Campus','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Allen','Kwesi Amanfu','akamanfu@st.ug.edu.gh','0557080160','Legon Campus','N/A','no','no','no','0','0','0','cat1','To be imparted with the WORD.','Minister Sophia'),
+
+('Mr Joy','James Nii Aponsah','niiaponsahj@gmail.com','0209514516','Ashiyie','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Gabriel','Anum Moffat','gabemoffat05@gmail.com','0543612533','Accra','N/A','no','no','no','0','0','0','cat1','To be imparted with the WORD.','Minister Sophia'),
+
+('Mr Stephen','Boadu','samuelnyarko@gmail.com','0241781227','Spintex','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Samuel','Amemasor','amemasorsamuel@gmail.com','0550509520','Spintex','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Gideon','Dennis','kodey688@gmail.com','0262340005','Haatso','N/A','no','no','no','0','0','0','cat1','To be imparted with the WORD.','Minister Sophia'),
+
+('Mr Micheal','Adjetey','michealbanty2u@gmail.com','0571415898','East Legon','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr Ebenezer','Oteng','ebenezeroteng@gmail.com','0268923291','East Legon','N/A','no','no','no','0','0','0','cat1','To be imparted with the WORD.','Minister Sophia'),
+
+('Mr Ofosuhene','Apenteng','Ohsnebaapenteng11@gmail.com','0544920076','East Legon','N/A','no','no','no','0','0','0','cat1','More intimacy with the Holy Spirit','Minister Sophia'),
+
+('Mr David','Albright','Davidn77@gmail.com','0206021073','East Legon','N/A','no','no','no','0','0','0','cat1','To be imparted with the WORD.','Minister Sophia'),
+
+('Mr Simon','Aklade','None','None','Adenta','N/A','no','no','no','0','0','0','cat1','To have an encounter with God and experience His righteousness. ','Minister Sophia'),
+
+('Mr Isaac','Ackon','None','None','Adenta','N/A','no','no','no','0','0','0','cat1','A renewal of mind and accuracy in living through the word.','Minister Sophia'),
+
+('Mr Prosper','Naazig','ProsNaazig@outlook.com','0553605232','Adenta','N/A','no','no','no','0','0','0','cat1','Glorious things, Greater power and a stronger connection with the spirit.','Minister Sophia'),
+
+('Miss Elsie','Antwi-Adjei','elsiebabyyaa5@gmail.com','0558261003','Spintex','N/A','no','no','no','0','0','0','cat1','To have an encounter with God and experience His righteousness.','Minister Sophia'),
+
+('Miss Yaa','QuamOwusu-Koranteng','None','0502106110','Tema','N/A','no','no','no','0','0','0','cat1','To experience the abundant life in Jesus Christ.','Minister Sophia');

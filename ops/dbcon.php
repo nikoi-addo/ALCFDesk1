@@ -1,5 +1,5 @@
 <?php
   //Database connection
-  $link = new mysqli("localhost", "root", "1200secs", "alcfdesk");
+  $link = new mysqli("localhost", "root", "", "alcfdesk");
 
 ?>
